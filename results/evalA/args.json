@@ -1,0 +1,11 @@
+{
+ "sessions": "data/eval/eval.jsonl",
+ "policies": "P1,P2,P3,P4,P5,P6,P7,P8",
+ "context": "short",
+ "cache": "retain",
+ "run_id": "evalA",
+ "cost_fit": "profiles/fit.json",
+ "models": "configs/models.json",
+ "only": null,
+ "order_seed": 0
+}
