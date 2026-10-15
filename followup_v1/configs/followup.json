@@ -1,0 +1,78 @@
+{
+ "config_id": "followup_v1",
+ "created": "2026-10-16 (before any follow-up GPU run; B2 rerun still in progress)",
+ "status": "post-hoc exploration: added after seeing stage A results",
+ "base": {
+  "models": "configs/models.json (unchanged)",
+  "router": "src/mrp/router.py (unchanged)",
+  "decoding": "unchanged",
+  "cost_fit": "profiles/fit.json (unchanged)",
+  "margin_s": 0.25,
+  "retry": "1 per step, S5 only (unchanged)",
+  "condition": "stage A: short context, retain"
+ },
+ "new_policies": {
+  "P9": "periodic by task step, k=3: router at attempt 0 of steps 0 and 3 only (retry turns never count or trigger)",
+  "P10": "event + periodic review: router if (turn==0) or (P6 event: [New task] at attempt 0, or non-PASS verifier on the message being answered) or (attempt==0 and step - last_router_step >= 2). At most one router call per turn; last_router_step = step of the most recent router call (any attempt)."
+ },
+ "no_cache_gate_on_new_policies": true,
+ "comparison_existing": [
+  "P3",
+  "P5",
+  "P4",
+  "P6"
+ ],
+ "note_P5": "existing P5 counts turns (incl. retries), k=2; P9 counts task steps. Not the same counter.",
+ "rerun_check": {
+  "policies": [
+   "P4",
+   "P6"
+  ],
+  "seed": 20261016,
+  "sessions": [
+   "eval-S1_constant-02",
+   "eval-S1_constant-08",
+   "eval-S2_shift-06",
+   "eval-S2_shift-08",
+   "eval-S3_alternating-04",
+   "eval-S3_alternating-08",
+   "eval-S4_accumulation-02",
+   "eval-S4_accumulation-07",
+   "eval-S5_verifier-01",
+   "eval-S5_verifier-08"
+  ],
+  "purpose": "timing drift check vs evalA; not an additional sample"
+ },
+ "initial_choice_diag": {
+  "seed": 20261017,
+  "sessions": [
+   "eval-S1_constant-00",
+   "eval-S1_constant-04",
+   "eval-S2_shift-02",
+   "eval-S2_shift-07",
+   "eval-S3_alternating-01",
+   "eval-S3_alternating-07",
+   "eval-S4_accumulation-08",
+   "eval-S4_accumulation-09",
+   "eval-S5_verifier-08",
+   "eval-S5_verifier-09"
+  ],
+  "input": "first request (turn 0), short context, cold cache (= the evalA state after per-run reset)",
+  "reps": 3
+ },
+ "switch_diag": {
+  "source": "B2 rerun turns (P4,P6,P7,P8) where active=B and router chose A",
+  "max_points": 20,
+  "selection": "strata = (context, cache, policy group {P4/P7: every-turn, P6/P8: event}); within each stratum order candidates by sha256('20261018|'+session|policy|turn); take round-robin across strata in fixed order until 20 or exhausted. No outcome information used.",
+  "duplicate_rule": "P7 and P8 points whose (session, context, cache, turn, prompt_sha) duplicate a P4/P6 point are dropped before selection (identical state).",
+  "restore": "reset server -> replay, per model, the logged prompts that model received before this turn in this run (since its last eviction), max_tokens=1 -> settle -> measure; repeated per rep",
+  "reps": 3,
+  "max_tokens": 1024
+ },
+ "policy_order": "shuffled per session, seed 7",
+ "do_not": [
+  "change k, prompts, threshold after seeing results",
+  "add cache gate to P9/P10",
+  "start new experiments after these"
+ ]
+}

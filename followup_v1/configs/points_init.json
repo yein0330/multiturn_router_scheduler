@@ -1,0 +1,151 @@
+{
+ "rule": {
+  "seed": 20261017,
+  "sessions": [
+   "eval-S1_constant-00",
+   "eval-S1_constant-04",
+   "eval-S2_shift-02",
+   "eval-S2_shift-07",
+   "eval-S3_alternating-01",
+   "eval-S3_alternating-07",
+   "eval-S4_accumulation-08",
+   "eval-S4_accumulation-09",
+   "eval-S5_verifier-08",
+   "eval-S5_verifier-09"
+  ],
+  "input": "first request (turn 0), short context, cold cache (= the evalA state after per-run reset)",
+  "reps": 3
+ },
+ "points": [
+  {
+   "run": "evalA",
+   "session_id": "eval-S1_constant-00",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "f932a81b9c9c17c8",
+   "router_choice_turn0": "A",
+   "scenario": "S1_constant"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S1_constant-04",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "d944b0e1be2d2265",
+   "router_choice_turn0": "A",
+   "scenario": "S1_constant"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S2_shift-02",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "5ca0d2560e33fa2e",
+   "router_choice_turn0": "A",
+   "scenario": "S2_shift"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S2_shift-07",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "a513986b9faa2e18",
+   "router_choice_turn0": "A",
+   "scenario": "S2_shift"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S3_alternating-01",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "cdadff8037fbe656",
+   "router_choice_turn0": "A",
+   "scenario": "S3_alternating"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S3_alternating-07",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "6586135a8771baaa",
+   "router_choice_turn0": "A",
+   "scenario": "S3_alternating"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S4_accumulation-08",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "e4e856f024827a14",
+   "router_choice_turn0": "A",
+   "scenario": "S4_accumulation"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S4_accumulation-09",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "5292fdbfba0bc5d1",
+   "router_choice_turn0": "A",
+   "scenario": "S4_accumulation"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S5_verifier-08",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "2f56d5dcac6f9534",
+   "router_choice_turn0": "A",
+   "scenario": "S5_verifier"
+  },
+  {
+   "run": "evalA",
+   "session_id": "eval-S5_verifier-09",
+   "policy": "P1",
+   "context": "short",
+   "cache": "retain",
+   "turn": 0,
+   "step": 0,
+   "attempt": 0,
+   "prompt_sha": "161a77995dd6356a",
+   "router_choice_turn0": "A",
+   "scenario": "S5_verifier"
+  }
+ ]
+}
