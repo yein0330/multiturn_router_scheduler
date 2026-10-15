@@ -1,0 +1,11 @@
+{
+ "sessions": "data/dev/calib_sessions.jsonl",
+ "policies": "P1,P2,P4",
+ "context": "short",
+ "cache": "retain",
+ "run_id": "dev_calib_sessions",
+ "cost_fit": null,
+ "models": "configs/models.json",
+ "only": null,
+ "order_seed": 0
+}

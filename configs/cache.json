@@ -1,0 +1,8 @@
+{
+  "config_id": "mrp_cache_v1",
+  "per_policy_run": "reset prefix cache of A, B and R before each (session, policy, condition) run",
+  "retain": "keep every model's prefix cache for the whole run (KV capacity: A 166,496 tok, B 40,880 tok; a long session needs < 18K tok)",
+  "evict": "stress test: at a switch away from model m, POST /reset_prefix_cache on m's server immediately",
+  "cache_state_lookup": "client-side record of prompt token ids sent to each server in this run; predicted hit = block-floored longest common prefix; checked against vllm:prefix_cache_hits_total every turn",
+  "no_cross_model_kv": true, "cpu_offload": false, "concurrency": 1
+}

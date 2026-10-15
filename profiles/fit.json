@@ -1,0 +1,35 @@
+{
+ "A": {
+  "prefill": {
+   "a": 0.024302636338204564,
+   "b": 1.8491527959314647e-05,
+   "k": 1.8959191756755364e-09,
+   "max_abs_rel_err": 0.4207368457826401
+  },
+  "tpot": {
+   "d0": 0.004436613806213541,
+   "d1": 1.2136113176142068e-07
+  },
+  "g_hat": 146.39467849223948,
+  "g_hat_n": 451
+ },
+ "B": {
+  "prefill": {
+   "a": 0.020709545026815213,
+   "b": 9.13592519276268e-05,
+   "k": 4.487075965696691e-09,
+   "max_abs_rel_err": 0.2412327419708027
+  },
+  "tpot": {
+   "d0": 0.016964902689145054,
+   "d1": 1.567720471143793e-07
+  },
+  "g_hat": 137.11464968152868,
+  "g_hat_n": 314
+ },
+ "_source": {
+  "prefill_tpot": "profiles/cost_profile.jsonl (B1, dev transcript dev-S1_constant-00 P2)",
+  "g_hat": "mean completion tokens per model over dev_smoke + dev_calib_sessions + dev_calib_single turns",
+  "fit_forms": "prefill=a+b*u+k*u*(c+u/2) on client TTFT; tpot=d0+d1*ctx on (total-ttft)/(g-1), g=320"
+ }
+}

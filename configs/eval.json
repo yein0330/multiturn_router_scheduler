@@ -1,0 +1,19 @@
+{
+  "config_id": "mrp_eval_v1",
+  "scenarios": ["S1_constant", "S2_shift", "S3_alternating", "S4_accumulation", "S5_verifier"],
+  "sessions_per_scenario": {"dev_smoke": 2, "dev_calibration": 4, "eval": 10},
+  "steps_per_session": 5,
+  "subtype_ratio": "5/5 by session index parity (src/mrp/tasks.py SCENARIOS, SHIFT_STRUCT)",
+  "seeds": {"dev_smoke": "1000 + 100*scenario_index + i", "dev_calibration": "2000 + 100*scenario_index + i",
+            "dev_single": "3000+i (easy), 3500+i (hard)", "eval": "50000 + 100*scenario_index + i"},
+  "domains": {"dev": ["orders", "library"], "eval": ["clinic", "fleet", "warehouse"]},
+  "phrasing_variant": {"dev": 0, "eval": 1},
+  "context": {"short": "first 12 rows of the table", "long": "220 rows (~11.6K tokens)"},
+  "hidden_eval": "3 hidden tables (40, 60, 30-with-ties rows); a step passes iff all 3 match",
+  "primary_quality": "mean step pass rate per session; secondary: final-step pass, all-steps pass",
+  "primary_cost": "session latency = sum(router + gate + evict + render + LLM call + verifier); instrumentation scrapes and hidden evaluation excluded",
+  "stage_A": {"context": "short", "cache": "retain", "policies": "P1-P8"},
+  "stage_B2_initial": {"policies": ["P1", "P2", "P4", "P6", "P7", "P8"],
+                       "conditions": [["long", "retain"], ["short", "evict"], ["long", "evict"]],
+                       "note": "P1/P2 never switch, so evict == retain for them; their evict cells reuse retain runs"}
+}

@@ -1,0 +1,11 @@
+{
+ "sessions": "data/dev/smoke.jsonl",
+ "policies": "P1,P2,P4,P6,P7,P8",
+ "context": "long",
+ "cache": "evict",
+ "run_id": "dev_smoke_long_evict",
+ "cost_fit": "profiles/fit.json",
+ "models": "configs/models.json",
+ "only": "dev-S2_shift-00,dev-S5_verifier-01",
+ "order_seed": 0
+}

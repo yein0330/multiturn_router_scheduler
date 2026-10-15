@@ -1,0 +1,19 @@
+{
+  "config_id": "mrp_policies_v1",
+  "policies": {
+    "P1": "always A", "P2": "always B", "P3": "R at turn 0, keep",
+    "P4": "R every turn", "P5": "R at turns 0,k,2k,...", "P6": "R at turn 0 + events",
+    "P7": "P4 + cache gate", "P8": "P6 + cache gate"
+  },
+  "k_period": 2,
+  "events": ["new_task: request starts with [New task]",
+             "verifier_fail / verifier_tool_error / verifier_format_error: the user message being answered carries a non-PASS [Verifier] result"],
+  "retry": {"max_retries_per_step": 1, "only_when": "a verifier exists (S5)", "same_for_all_policies": true},
+  "gate": {"rule": "A->B follow; B->A follow only if C_hat(B,stay) - C_hat(A,switch) > margin", "margin_s": 0.25,
+           "cost_fit": "profiles/fit.json", "horizon": "next call only"},
+  "router": {"model": "R (configs/models.json)", "module": "src/mrp/router.py",
+             "hist_messages": 4, "hist_tokens_per_message": 300, "current_message_tokens": 1200,
+             "table_rows": "omitted", "output": "SMALL|LARGE", "fallback_on_parse_error": "B",
+             "status": "fixed zero-shot exploratory baseline; not trained, not calibrated"},
+  "policy_order": "shuffled per session with --order-seed 0"
+}
