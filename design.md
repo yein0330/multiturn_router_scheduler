@@ -163,3 +163,13 @@ dev 확인 결과(results/dev_*; 평가 데이터는 이 시점까지 생성하�
 - 게이트: dev에서 6회 적용, override 0회, 최소 예상 절약 1.35 s. §8 사전 예측대로 P7=P4, P8=P6 결정이 dev에서 동일했다. 그래도 명세대로 평가에서 모두 실행한다.
 - 변경 없음: 시나리오, 하위 유형 비율, k=2, margin 0.25 s, 재시도 1회, max_tokens 1024.
 - 동결 파일: configs/*.json, profiles/fit.json, src/mrp/*(git commit으로 기록).
+
+### 12.1 단계 B2 범위 동결 (2026-10-15 22:15, 단계 A 실행 중)
+
+- 범위는 사전 계획과 같다. 정책 P1, P2, P4, P6, P7, P8 × 조건 {long/retain, short/evict, long/evict}, 평가 세션 50개 전부. P1/P2의 evict 셀은 retain 실행을 재사용한다(전환이 없어 퇴거가 일어나지 않음).
+- 근거는 실행 가능성과 자원뿐이다.
+  - dev long/evict smoke(2세션 × 6정책)가 정상 동작했다(퇴거 14회, 적중 예측 67/67 일치).
+  - long 세션 최대 약 16K토큰 < B KV 40,880토큰.
+  - 예상 소요 약 2.5시간.
+- 단계 A의 품질 결과는 범위 결정에 쓰지 않았다(A 완료를 기다리지 않고 이 시점에 고정).
+- 실행 순서: evalA 종료 → long/retain → short/evict → long/evict (scripts/stageB.sh).
