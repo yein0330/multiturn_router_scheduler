@@ -185,3 +185,10 @@ dev 확인 결과(results/dev_*; 평가 데이터는 이 시점까지 생성하�
   - long/retain: P1, P2, P4, P6, P7, P8.
   - short/evict와 long/evict: P4, P6, P7, P8. P1/P2는 전환이 없어 evict가 no-op이므로 retain 결과를 재사용한다.
 - 평가 세션 50개, 시나리오 5개를 모두 유지한다. 게이트가 지금까지 결정을 바꾸지 않았다는 이유로 P7/P8을 빼지 않는다. long·evict에서 처음으로 결정이 달라질 수 있는지가 RQ3의 핵심 확인 사항이기 때문이다.
+
+### 12.2 B2 재실행 기록 (2026-10-16 00:2x)
+
+- 첫 B2 시도는 두 세션의 실행기가 동시에 돌아 무효다. 증거와 내용은 results/_quarantine_concurrent/README.md에 있다.
+- 사용자 결정에 따라 B2 전체(§12.1과 같은 범위)를 단일 실행기(scripts/evalB.sh)로 다시 실행한다.
+- 코드·설정·데이터·비용 적합은 동결 commit 4c44031과 같다(`git diff 4c44031 HEAD -- src configs data profiles` 비어 있음). 단 analyze.py는 P1/P2 evict 셀을 retain에서 재사용하는 표시 로직만 추가했고, 실행에는 영향이 없다.
+- 첫 시도의 B2 수치는 재실행 범위나 해석에 쓰지 않았다.

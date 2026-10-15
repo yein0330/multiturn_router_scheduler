@@ -31,6 +31,16 @@ def load(runs):
         d = ROOT / "results" / r
         S += [json.loads(l) for l in open(d / "sessions.jsonl")]
         T += [json.loads(l) for l in open(d / "turns.jsonl")]
+    # P1/P2 never switch, so evict == retain for them (design.md §9): reuse retain runs, flagged.
+    evict_ctx = {s["context"] for s in S if s["cache_mode"] == "evict"}
+    have = {(s["session_id"], s["policy"], s["context"], s["cache_mode"]) for s in S}
+    for rows in (S, T):
+        extra = []
+        for x in rows:
+            if x["policy"] in ("P1", "P2") and x["cache_mode"] == "retain" and x["context"] in evict_ctx \
+                    and (x["session_id"], x["policy"], x["context"], "evict") not in have:
+                extra.append({**x, "cache_mode": "evict", "reused_from_retain": True})
+        rows += extra
     return S, T
 
 
