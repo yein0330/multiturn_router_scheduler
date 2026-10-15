@@ -1,0 +1,13 @@
+context,cache,vs,verifier,hidden_change,n,d_step_pass,d_latency_s,n_better,n_worse
+short,retain,P1,False,False,16,0.0625,1.8291122406626528,4,1
+short,retain,P1,False,True,24,-0.06666666666666667,2.6746748968507745,2,3
+short,retain,P1,True,False,3,0.26666666666666666,6.684458961671528,3,0
+short,retain,P1,True,True,7,0.17142857142857146,5.888228675284024,4,0
+short,retain,P2,False,False,16,-0.1875,-4.771518557678064,2,6
+short,retain,P2,False,True,24,-0.3,-5.783624952666287,0,13
+short,retain,P2,True,False,3,-0.06666666666666665,1.5211000696678336,0,1
+short,retain,P2,True,True,7,-0.17142857142857143,-0.10773617876527299,0,4
+short,retain,P4,False,False,16,-0.1875,-2.6186455049028154,0,6
+short,retain,P4,False,True,24,-0.19166666666666665,-3.2438386938374606,1,10
+short,retain,P4,True,False,3,0.0,0.4322592885776733,0,0
+short,retain,P4,True,True,7,-0.14285714285714285,0.595725279542551,1,4

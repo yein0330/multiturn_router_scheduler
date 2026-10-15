@@ -1,0 +1,5 @@
+run,present,session_rows,unique_runs,expected_runs,missing_runs,duplicate_runs,turns,hit_mismatch,hit_null,truncated,http_errors,no_code,router_parse_errors,complete,clean
+evalA,True,400,400,400,0,0,2092,0,0,0,0,0,0,True,True
+evalB_long_retain,True,300,300,300,0,0,1570,0,0,0,0,0,0,True,True
+evalB_short_evict,True,200,200,200,0,0,1038,0,0,0,0,0,0,True,True
+evalB_long_evict,True,200,200,200,0,0,1044,0,0,0,0,0,0,True,True

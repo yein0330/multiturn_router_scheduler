@@ -1,0 +1,463 @@
+{
+ "rule": {
+  "source": "B2 rerun turns (P4,P6,P7,P8) where active=B and router chose A",
+  "max_points": 20,
+  "selection": "strata = (context, cache, policy group {P4/P7: every-turn, P6/P8: event}); within each stratum order candidates by sha256('20261018|'+session|policy|turn); take round-robin across strata in fixed order until 20 or exhausted. No outcome information used.",
+  "duplicate_rule": "P7 and P8 points whose (session, context, cache, turn, prompt_sha) duplicate a P4/P6 point are dropped before selection (identical state).",
+  "restore": "reset server -> replay, per model, the logged prompts that model received before this turn in this run (since its last eviction), max_tokens=1 -> settle -> measure; repeated per rep",
+  "reps": 3,
+  "max_tokens": 1024
+ },
+ "b2_runs": [
+  "evalB_long_retain",
+  "evalB_short_evict",
+  "evalB_long_evict"
+ ],
+ "n_candidates": 82,
+ "n_after_dedup": 41,
+ "n_picked": 20,
+ "distribution": {
+  "long|retain|P7": {
+   "candidates": 10,
+   "after_dedup": 0,
+   "picked": 0
+  },
+  "long|retain|P4": {
+   "candidates": 10,
+   "after_dedup": 10,
+   "picked": 4
+  },
+  "long|retain|P8": {
+   "candidates": 4,
+   "after_dedup": 0,
+   "picked": 0
+  },
+  "long|retain|P6": {
+   "candidates": 4,
+   "after_dedup": 4,
+   "picked": 4
+  },
+  "short|evict|P4": {
+   "candidates": 12,
+   "after_dedup": 12,
+   "picked": 3
+  },
+  "short|evict|P7": {
+   "candidates": 12,
+   "after_dedup": 0,
+   "picked": 0
+  },
+  "short|evict|P6": {
+   "candidates": 1,
+   "after_dedup": 1,
+   "picked": 1
+  },
+  "short|evict|P8": {
+   "candidates": 1,
+   "after_dedup": 0,
+   "picked": 0
+  },
+  "long|evict|P4": {
+   "candidates": 10,
+   "after_dedup": 10,
+   "picked": 4
+  },
+  "long|evict|P7": {
+   "candidates": 10,
+   "after_dedup": 0,
+   "picked": 0
+  },
+  "long|evict|P8": {
+   "candidates": 4,
+   "after_dedup": 0,
+   "picked": 0
+  },
+  "long|evict|P6": {
+   "candidates": 4,
+   "after_dedup": 4,
+   "picked": 4
+  }
+ },
+ "points": [
+  {
+   "run": "evalB_long_evict",
+   "session_id": "eval-S5_verifier-03",
+   "policy": "P6",
+   "context": "long",
+   "cache": "evict",
+   "turn": 3,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "d996081c59494c9a",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|evict|event",
+   "key": "33e4a88559073dad62bb3f34630151613ea317724f42d22d151f478037b0e64d"
+  },
+  {
+   "run": "evalB_long_evict",
+   "session_id": "eval-S3_alternating-02",
+   "policy": "P4",
+   "context": "long",
+   "cache": "evict",
+   "turn": 2,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "75fc69aacae941b8",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S3_alternating",
+   "stratum": "long|evict|every_turn",
+   "key": "0a839a479a34abfd0632a40ae6f63fd6c5d245463b1eaf59fc0538f7b9b58ff2"
+  },
+  {
+   "run": "evalB_long_retain",
+   "session_id": "eval-S5_verifier-03",
+   "policy": "P6",
+   "context": "long",
+   "cache": "retain",
+   "turn": 3,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "d996081c59494c9a",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|retain|event",
+   "key": "1b2f4a2d3076de83a02a48efc659ce11027eb4f567a750f1e613bbf53db32ba7"
+  },
+  {
+   "run": "evalB_long_retain",
+   "session_id": "eval-S5_verifier-07",
+   "policy": "P4",
+   "context": "long",
+   "cache": "retain",
+   "turn": 2,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "5eb34f3420413a65",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|retain|every_turn",
+   "key": "09f4153ade1b18bddab04c9f813762e2bd02b28909c72cdcc1b85961b05c0cb4"
+  },
+  {
+   "run": "evalB_short_evict",
+   "session_id": "eval-S5_verifier-05",
+   "policy": "P6",
+   "context": "short",
+   "cache": "evict",
+   "turn": 5,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "31252d313635fa21",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "short|evict|event",
+   "key": "ec87517bc7249eff2b64e507f5c0ae17aa05a4a4304c4df4af6f2a902810cb4d"
+  },
+  {
+   "run": "evalB_short_evict",
+   "session_id": "eval-S5_verifier-04",
+   "policy": "P4",
+   "context": "short",
+   "cache": "evict",
+   "turn": 6,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "ce9eca3163c5aa7e",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "short|evict|every_turn",
+   "key": "0cb299da57bba2c2fcdb0f94df3f404302db3b0565f0e6866e5bd1830797b324"
+  },
+  {
+   "run": "evalB_long_evict",
+   "session_id": "eval-S5_verifier-05",
+   "policy": "P6",
+   "context": "long",
+   "cache": "evict",
+   "turn": 5,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "3f5263e4e367e8e2",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|evict|event",
+   "key": "3bed2d746d98f4f52bc00b592f7ef79015ca53cca91cc2ce7243b1e18e3febad"
+  },
+  {
+   "run": "evalB_long_evict",
+   "session_id": "eval-S5_verifier-03",
+   "policy": "P4",
+   "context": "long",
+   "cache": "evict",
+   "turn": 2,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "202d71e566f3aa8b",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|evict|every_turn",
+   "key": "0b32fcfe4cddc30e9884036370621f896dae4045f269655f046aa1b33c04f252"
+  },
+  {
+   "run": "evalB_long_retain",
+   "session_id": "eval-S5_verifier-01",
+   "policy": "P6",
+   "context": "long",
+   "cache": "retain",
+   "turn": 6,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "70a27c9991337273",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|retain|event",
+   "key": "75e86b88d4f5af349616b1a24339c1dd2dc8bd70d3d578b7bd9c525e03850034"
+  },
+  {
+   "run": "evalB_long_retain",
+   "session_id": "eval-S2_shift-01",
+   "policy": "P4",
+   "context": "long",
+   "cache": "retain",
+   "turn": 2,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "491a1fa5f6ba1a4b",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S2_shift",
+   "stratum": "long|retain|every_turn",
+   "key": "1842eff7bcbe425850b27e2731c1b9964fd4bfa63dd7ab331c2113ac61d72b8d"
+  },
+  {
+   "run": "evalB_short_evict",
+   "session_id": "eval-S4_accumulation-09",
+   "policy": "P4",
+   "context": "short",
+   "cache": "evict",
+   "turn": 4,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "514caa7cec2d8d02",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S4_accumulation",
+   "stratum": "short|evict|every_turn",
+   "key": "19e8cd652e517da1fad11cee82a69cd345f861dfa41cbd1f2cd7465212733a4a"
+  },
+  {
+   "run": "evalB_long_evict",
+   "session_id": "eval-S5_verifier-07",
+   "policy": "P6",
+   "context": "long",
+   "cache": "evict",
+   "turn": 3,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "5ef2aa41f7ab7c2b",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|evict|event",
+   "key": "3c1a2b4e3427b6091b7176d0e19bfc1af89e45b4f02d5ec1bca29f15b07d9d22"
+  },
+  {
+   "run": "evalB_long_evict",
+   "session_id": "eval-S5_verifier-04",
+   "policy": "P4",
+   "context": "long",
+   "cache": "evict",
+   "turn": 6,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "d2afbe7692b2ddc4",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|evict|every_turn",
+   "key": "29d390fc6ee7281f016751044b878d0b90afe1ee00d2e4b352ed315fad3d099c"
+  },
+  {
+   "run": "evalB_long_retain",
+   "session_id": "eval-S5_verifier-05",
+   "policy": "P6",
+   "context": "long",
+   "cache": "retain",
+   "turn": 5,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "3f5263e4e367e8e2",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|retain|event",
+   "key": "dbcf3b53a640db222876a99469e393d3a6706d02f190c948c11b744b8fc2325b"
+  },
+  {
+   "run": "evalB_long_retain",
+   "session_id": "eval-S3_alternating-00",
+   "policy": "P4",
+   "context": "long",
+   "cache": "retain",
+   "turn": 2,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "1502dc963f80549d",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S3_alternating",
+   "stratum": "long|retain|every_turn",
+   "key": "6180014f3638dec9d7ac0905f9c61e8f987046372edead23ed47d6b95396123c"
+  },
+  {
+   "run": "evalB_short_evict",
+   "session_id": "eval-S2_shift-01",
+   "policy": "P4",
+   "context": "short",
+   "cache": "evict",
+   "turn": 3,
+   "step": 3,
+   "attempt": 0,
+   "prompt_sha": "f0c79c8118aeff03",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S2_shift",
+   "stratum": "short|evict|every_turn",
+   "key": "48b725d33d090040ef91ebd0ba31e3d8e272e8a5b29e335ddccedd1c82fccef0"
+  },
+  {
+   "run": "evalB_long_evict",
+   "session_id": "eval-S5_verifier-01",
+   "policy": "P6",
+   "context": "long",
+   "cache": "evict",
+   "turn": 6,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "70a27c9991337273",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|evict|event",
+   "key": "5cf3637683ef3b28bf42b888bf4a08ae86378d58a5942b066cef64e89b68439d"
+  },
+  {
+   "run": "evalB_long_evict",
+   "session_id": "eval-S3_alternating-04",
+   "policy": "P4",
+   "context": "long",
+   "cache": "evict",
+   "turn": 4,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "fc9c1e875a9cd1aa",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S3_alternating",
+   "stratum": "long|evict|every_turn",
+   "key": "428a618d3ed63412784516792de5320d48016fbdaef86a8863fca72dc634556d"
+  },
+  {
+   "run": "evalB_long_retain",
+   "session_id": "eval-S5_verifier-07",
+   "policy": "P6",
+   "context": "long",
+   "cache": "retain",
+   "turn": 3,
+   "step": 2,
+   "attempt": 0,
+   "prompt_sha": "5ef2aa41f7ab7c2b",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|retain|event",
+   "key": "f375d6c7a935c2972e56f8643929dfed702ae3ccbdb9b626223f9fb44981d5d4"
+  },
+  {
+   "run": "evalB_long_retain",
+   "session_id": "eval-S5_verifier-05",
+   "policy": "P4",
+   "context": "long",
+   "cache": "retain",
+   "turn": 5,
+   "step": 4,
+   "attempt": 0,
+   "prompt_sha": "8de5fb77aa7b0a2a",
+   "chosen": "A",
+   "gate": {
+    "applied": false,
+    "gate_s": 0.0
+   },
+   "scenario": "S5_verifier",
+   "stratum": "long|retain|every_turn",
+   "key": "6891b710cb16156719364f5469e49d926cae9c91b554b584774bea88c96d78f1"
+  }
+ ]
+}

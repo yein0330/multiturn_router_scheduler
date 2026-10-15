@@ -1,0 +1,16 @@
+{
+ "rows": 120,
+ "points": 20,
+ "reconstruct_ok_all": true,
+ "matched_state_rows": 120,
+ "truncated": 0,
+ "errors": 0,
+ "points_models_with_varying_output": 0,
+ "kind": "switch",
+ "faster_correct": 20,
+ "n_points": 20,
+ "mean_abs_pred_err_s": 0.6269064843080463,
+ "quality_classes": {
+  "both_pass": 20
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "turns": 6793,
+ "sessions": 1300,
+ "hit_pred_mismatch": 0,
+ "hit_null": 0,
+ "truncated": 0,
+ "no_code": 0,
+ "router_parse_errors": 0,
+ "gate_overrides": 0,
+ "gate_applied": 54
+}

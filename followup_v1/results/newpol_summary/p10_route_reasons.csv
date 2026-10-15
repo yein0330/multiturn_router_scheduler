@@ -1,0 +1,7 @@
+,count
+first_turn,50
+event:new_task,49
+review_after_2_steps,43
+event:verifier_fail,13
+event:new_task+verifier_fail,6
+event:verifier_tool_error,2

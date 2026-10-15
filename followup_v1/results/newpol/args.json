@@ -1,0 +1,5 @@
+{
+ "run_id": "newpol",
+ "cost_fit": "profiles/fit.json",
+ "order_seed": 7
+}

@@ -1,0 +1,11 @@
+{
+ "sessions": "data/eval/eval.jsonl",
+ "policies": "P4,P6,P7,P8",
+ "context": "long",
+ "cache": "evict",
+ "run_id": "evalB_long_evict",
+ "cost_fit": "profiles/fit.json",
+ "models": "configs/models.json",
+ "only": null,
+ "order_seed": 0
+}

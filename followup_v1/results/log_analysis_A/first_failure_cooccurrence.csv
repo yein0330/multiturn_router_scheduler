@@ -1,0 +1,9 @@
+context,cache,policy,reroute_changed_model,n,later_step_pass,final_pass
+short,retain,P4,False,8,0.4375,0.375
+short,retain,P4,True,6,0.9166666666666666,0.8333333333333334
+short,retain,P5,False,13,0.40384615384615385,0.38461538461538464
+short,retain,P5,True,1,0.5,1.0
+short,retain,P6,False,10,0.45,0.4
+short,retain,P7,False,8,0.4375,0.375
+short,retain,P7,True,6,0.9166666666666666,0.8333333333333334
+short,retain,P8,False,10,0.45,0.4

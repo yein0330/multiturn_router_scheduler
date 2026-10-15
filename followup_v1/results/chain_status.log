@@ -1,0 +1,6 @@
+2026-10-16 01:42:58 waiting for B2 pid 1191556
+2026-10-16 03:46:59 B2 exited; counts:    200 results/evalB_long_evict/sessions.jsonl    300 results/evalB_long_retain/sessions.jsonl    200 results/evalB_short_evict/sessions.jsonl    700 total 
+2026-10-16 04:03:33 newpol exit=0 rows=120
+2026-10-16 04:05:22 branch_init exit=0 rows=60
+2026-10-16 04:10:47 branch_switch exit=0 rows=120
+2026-10-16 04:10:47 CHAIN_DONE

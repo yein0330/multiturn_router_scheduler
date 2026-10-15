@@ -1,0 +1,21 @@
+{
+ "rows": 60,
+ "points": 10,
+ "reconstruct_ok_all": true,
+ "matched_state_rows": 60,
+ "truncated": 0,
+ "errors": 0,
+ "points_models_with_varying_output": 0,
+ "kind": "init",
+ "faster_correct": 10,
+ "n_points": 10,
+ "mean_abs_pred_err_s": 0.8562964520486499,
+ "quality_classes": {
+  "both_pass": 7,
+  "only_B": 3
+ },
+ "router_choice_counts": {
+  "A": 10
+ },
+ "router_A_and_only_B_passes": 3
+}

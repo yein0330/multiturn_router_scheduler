@@ -1,0 +1,16 @@
+{
+ "rows": 120,
+ "unique": 120,
+ "hit_mismatch": 0,
+ "truncated": 0,
+ "router_parse_errors": 0,
+ "expected": 120,
+ "rerun_turns_text_diff": 0,
+ "drift_same_quality": 20,
+ "drift_n": 20,
+ "drift_latency_ratio_median": 0.999668162767215,
+ "drift_latency_ratio_range": [
+  0.9843106601012163,
+  1.0265866549450238
+ ]
+}
