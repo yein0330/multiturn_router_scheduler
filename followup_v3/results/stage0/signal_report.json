@@ -1,0 +1,315 @@
+{
+ "n": {
+  "dev_short": 30,
+  "eval_short": 50,
+  "eval_long": 50
+ },
+ "class_rates": {
+  "dev_short": {
+   "L_lex": null,
+   "L_ge": 0.3,
+   "both_zero": 0.0
+  },
+  "eval_short": {
+   "L_lex": 0.26,
+   "L_ge": 0.34,
+   "both_zero": 0.0
+  },
+  "eval_long": {
+   "L_lex": 0.26,
+   "L_ge": 0.36,
+   "both_zero": 0.02
+  }
+ },
+ "models": [
+  {
+   "context": "short",
+   "label": "L_lex",
+   "timepoint": "initial",
+   "protocol": "scenario leave-one-out on eval",
+   "n": 50,
+   "pos_rate": 0.26,
+   "auc": 0.14137214137214138,
+   "brier": 0.25421035520074275,
+   "brier_base": 0.19240000000000002,
+   "calibration": [
+    {
+     "bin": "[0.00,0.33)",
+     "n": 38,
+     "mean_pred": 0.21927141469366163,
+     "obs_rate": 0.34210526315789475
+    },
+    {
+     "bin": "[0.33,0.67)",
+     "n": 12,
+     "mean_pred": 0.4055959552844863,
+     "obs_rate": 0.0
+    },
+    {
+     "bin": "[0.67,1.00)",
+     "n": 0,
+     "mean_pred": null,
+     "obs_rate": null
+    }
+   ]
+  },
+  {
+   "context": "long",
+   "label": "L_lex",
+   "timepoint": "initial",
+   "protocol": "scenario leave-one-out on eval",
+   "n": 50,
+   "pos_rate": 0.26,
+   "auc": 0.22245322245322247,
+   "brier": 0.25577546867164214,
+   "brier_base": 0.19240000000000002,
+   "calibration": [
+    {
+     "bin": "[0.00,0.33)",
+     "n": 36,
+     "mean_pred": 0.2121720657993185,
+     "obs_rate": 0.3611111111111111
+    },
+    {
+     "bin": "[0.33,0.67)",
+     "n": 14,
+     "mean_pred": 0.4462090482091194,
+     "obs_rate": 0.0
+    },
+    {
+     "bin": "[0.67,1.00)",
+     "n": 0,
+     "mean_pred": null,
+     "obs_rate": null
+    }
+   ]
+  },
+  {
+   "context": "short",
+   "label": "L_lex",
+   "timepoint": "after_first_A",
+   "protocol": "scenario leave-one-out on eval",
+   "n": 50,
+   "pos_rate": 0.26,
+   "auc": 0.19542619542619544,
+   "brier": 0.2634134534446845,
+   "brier_base": 0.19240000000000002,
+   "calibration": [
+    {
+     "bin": "[0.00,0.33)",
+     "n": 34,
+     "mean_pred": 0.21080990604027558,
+     "obs_rate": 0.38235294117647056
+    },
+    {
+     "bin": "[0.33,0.67)",
+     "n": 16,
+     "mean_pred": 0.4222978932946283,
+     "obs_rate": 0.0
+    },
+    {
+     "bin": "[0.67,1.00)",
+     "n": 0,
+     "mean_pred": null,
+     "obs_rate": null
+    }
+   ]
+  },
+  {
+   "context": "long",
+   "label": "L_lex",
+   "timepoint": "after_first_A",
+   "protocol": "scenario leave-one-out on eval",
+   "n": 50,
+   "pos_rate": 0.26,
+   "auc": 0.2765072765072765,
+   "brier": 0.25600878826390433,
+   "brier_base": 0.19240000000000002,
+   "calibration": [
+    {
+     "bin": "[0.00,0.33)",
+     "n": 28,
+     "mean_pred": 0.2060662561737395,
+     "obs_rate": 0.35714285714285715
+    },
+    {
+     "bin": "[0.33,0.67)",
+     "n": 21,
+     "mean_pred": 0.4184635780888577,
+     "obs_rate": 0.14285714285714285
+    },
+    {
+     "bin": "[0.67,1.00)",
+     "n": 1,
+     "mean_pred": 0.6736975231551032,
+     "obs_rate": 0.0
+    }
+   ]
+  },
+  {
+   "context": "short",
+   "label": "L_ge",
+   "timepoint": "initial",
+   "protocol": "fit dev(30) -> eval(50)",
+   "n": 50,
+   "pos_rate": 0.34,
+   "auc": 0.5062388591800356,
+   "brier": 0.2288660671997996,
+   "brier_base": 0.22440000000000002,
+   "calibration": [
+    {
+     "bin": "[0.00,0.33)",
+     "n": 33,
+     "mean_pred": 0.21687501392761838,
+     "obs_rate": 0.2727272727272727
+    },
+    {
+     "bin": "[0.33,0.67)",
+     "n": 17,
+     "mean_pred": 0.3881205978390411,
+     "obs_rate": 0.47058823529411764
+    },
+    {
+     "bin": "[0.67,1.00)",
+     "n": 0,
+     "mean_pred": null,
+     "obs_rate": null
+    }
+   ],
+   "coef": {
+    "bias": -0.896,
+    "req_tokens_z": 0.014,
+    "op=count": -0.779,
+    "op=sum_qty": 0.448,
+    "op=max_price_id": 0.441,
+    "op=distinct_cat2": -0.241,
+    "op=mean_qty": -0.087,
+    "op=group_argmax_rev": 0.289,
+    "op=median_by_cat2": -0.244,
+    "op=top3_multikey": 0.663,
+    "op=rate_threshold": -0.574,
+    "op=running_balance": -0.251,
+    "op=longest_day_streak": -0.244,
+    "op=second_cat2": 0.577
+   }
+  },
+  {
+   "context": "long",
+   "label": "L_ge",
+   "timepoint": "initial",
+   "protocol": "scenario leave-one-out on eval",
+   "n": 50,
+   "pos_rate": 0.36,
+   "auc": 0.3350694444444444,
+   "brier": 0.28391975515609214,
+   "brier_base": 0.2304,
+   "calibration": [
+    {
+     "bin": "[0.00,0.33)",
+     "n": 22,
+     "mean_pred": 0.2612906444677728,
+     "obs_rate": 0.5909090909090909
+    },
+    {
+     "bin": "[0.33,0.67)",
+     "n": 24,
+     "mean_pred": 0.44049998742467095,
+     "obs_rate": 0.20833333333333334
+    },
+    {
+     "bin": "[0.67,1.00)",
+     "n": 4,
+     "mean_pred": 0.6861438189926301,
+     "obs_rate": 0.0
+    }
+   ]
+  },
+  {
+   "context": "short",
+   "label": "L_ge",
+   "timepoint": "after_first_A",
+   "protocol": "fit dev(30) -> eval(50)",
+   "n": 50,
+   "pos_rate": 0.34,
+   "auc": 0.5677361853832442,
+   "brier": 0.22387805929742025,
+   "brier_base": 0.22440000000000002,
+   "calibration": [
+    {
+     "bin": "[0.00,0.33)",
+     "n": 35,
+     "mean_pred": 0.21475587346071737,
+     "obs_rate": 0.2571428571428571
+    },
+    {
+     "bin": "[0.33,0.67)",
+     "n": 15,
+     "mean_pred": 0.4214954180164246,
+     "obs_rate": 0.5333333333333333
+    },
+    {
+     "bin": "[0.67,1.00)",
+     "n": 0,
+     "mean_pred": null,
+     "obs_rate": null
+    }
+   ],
+   "coef": {
+    "bias": -0.778,
+    "req_tokens_z": 0.189,
+    "op=count": -0.839,
+    "op=sum_qty": 0.434,
+    "op=max_price_id": 0.529,
+    "op=distinct_cat2": -0.27,
+    "op=mean_qty": -0.097,
+    "op=group_argmax_rev": 0.343,
+    "op=median_by_cat2": -0.213,
+    "op=top3_multikey": 0.54,
+    "op=rate_threshold": -0.508,
+    "op=running_balance": -0.264,
+    "op=longest_day_streak": -0.236,
+    "op=second_cat2": 0.582,
+    "firstA_tokens_z": -0.262,
+    "firstA_verifier=FAIL": 0.0,
+    "firstA_verifier=TOOL_ERROR": 0.0,
+    "firstA_verifier=PASS": -0.577
+   }
+  },
+  {
+   "context": "long",
+   "label": "L_ge",
+   "timepoint": "after_first_A",
+   "protocol": "scenario leave-one-out on eval",
+   "n": 50,
+   "pos_rate": 0.36,
+   "auc": 0.4079861111111111,
+   "brier": 0.27356314176126123,
+   "brier_base": 0.2304,
+   "calibration": [
+    {
+     "bin": "[0.00,0.33)",
+     "n": 11,
+     "mean_pred": 0.2565610557088659,
+     "obs_rate": 0.5454545454545454
+    },
+    {
+     "bin": "[0.33,0.67)",
+     "n": 34,
+     "mean_pred": 0.4362485851068151,
+     "obs_rate": 0.35294117647058826
+    },
+    {
+     "bin": "[0.67,1.00)",
+     "n": 5,
+     "mean_pred": 0.6924261510219228,
+     "obs_rate": 0.0
+    }
+   ]
+  }
+ ],
+ "after_first_A_cost_s_mean": {
+  "short": 0.5447409797413275,
+  "long": 1.2579718889237848
+ },
+ "note": "[hypothesis] exploratory; small n; not used as a policy; op family is an observable proxy derived from the request text"
+}

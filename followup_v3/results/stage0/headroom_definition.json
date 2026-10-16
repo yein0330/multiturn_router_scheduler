@@ -1,0 +1,65 @@
+{
+ "quality_constraint": "per-session request pass rate q_i(pi) >= q_i(BBBBB)",
+ "session_success": "S = all steps pass (reported separately)",
+ "candidate_sets": {
+  "short": {
+   "F2": [
+    "AAAAA",
+    "BBBBB"
+   ],
+   "F6": [
+    "AAAAA",
+    "AAAAB",
+    "AAABB",
+    "AABBB",
+    "ABBBB",
+    "BBBBB"
+   ],
+   "F6plus": [
+    "AAAAA",
+    "AAAAB",
+    "AAABB",
+    "AABBB",
+    "ABBBB",
+    "BBBBB",
+    "P4",
+    "P6",
+    "P10"
+   ]
+  },
+  "long": {
+   "F2": [
+    "AAAAA",
+    "BBBBB"
+   ],
+   "F6": [
+    "AAAAA",
+    "AAAAB",
+    "AAABB",
+    "AABBB",
+    "ABBBB",
+    "BBBBB"
+   ],
+   "F6plus": [
+    "AAAAA",
+    "AAAAB",
+    "AAABB",
+    "AABBB",
+    "ABBBB",
+    "BBBBB",
+    "P4",
+    "P6"
+   ]
+  }
+ },
+ "information_access": "ex-post: uses each session's realized outcomes of every executed policy; not deployable; within executed-path set only (no path splicing)",
+ "T_ref": "mean latency of BBBBB on the same eval condition (post-hoc normalization; v3 policies will use a dev-fixed T_ref)",
+ "mus": [
+  0.5,
+  1,
+  2,
+  4
+ ],
+ "crossfit": "scenario-informed diagnostic baseline: per scenario 5/5 session split, select one of six schedules on half, evaluate on the other half; 200 splits (not independent samples)",
+ "bootstrap": "scenario-stratified session bootstrap, 2000; cross-fit re-run inside each resample"
+}
