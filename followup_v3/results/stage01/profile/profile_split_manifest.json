@@ -1,0 +1,19 @@
+{
+ "targets": [
+  1024,
+  4096,
+  8192,
+  16384,
+  24576
+ ],
+ "actual_len": {
+  "1024": 697,
+  "4096": 4057,
+  "8192": 7528,
+  "16384": 15815,
+  "24576": 23882
+ },
+ "max_available": 73102,
+ "holdout_rule": "context==8192 or output==48",
+ "forced_output": "min_tokens=max_tokens=g, ignore_eos=True"
+}

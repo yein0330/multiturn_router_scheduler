@@ -1,0 +1,221 @@
+{
+ "rule": "per (context, direction): up to 6 points; C1 vs C2/C3 disagreement points first (hash order), otherwise smallest |C2 keep-follow| gap; chosen before measuring",
+ "points": [
+  {
+   "session_id": "dev-rise-06",
+   "context": "long",
+   "call": 7,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-alt-01",
+   "context": "long",
+   "call": 5,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-const-05",
+   "context": "long",
+   "call": 5,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-const-00",
+   "context": "long",
+   "call": 22,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-const-06",
+   "context": "long",
+   "call": 8,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-chain-04",
+   "context": "long",
+   "call": 14,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-alt-06",
+   "context": "long",
+   "call": 16,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": true
+  },
+  {
+   "session_id": "dev-rise-03",
+   "context": "long",
+   "call": 16,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": true
+  },
+  {
+   "session_id": "dev-expose-06",
+   "context": "long",
+   "call": 11,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": true
+  },
+  {
+   "session_id": "dev-const-01",
+   "context": "long",
+   "call": 9,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-const-03",
+   "context": "long",
+   "call": 14,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-rise-08",
+   "context": "long",
+   "call": 10,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-const-06",
+   "context": "short",
+   "call": 7,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-alt-08",
+   "context": "short",
+   "call": 10,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-chain-09",
+   "context": "short",
+   "call": 10,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-alt-03",
+   "context": "short",
+   "call": 11,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-chain-02",
+   "context": "short",
+   "call": 11,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-chain-05",
+   "context": "short",
+   "call": 7,
+   "cur": "A",
+   "rec": "B",
+   "direction": "A->B",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-const-09",
+   "context": "short",
+   "call": 18,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-const-05",
+   "context": "short",
+   "call": 15,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-chain-04",
+   "context": "short",
+   "call": 12,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-chain-00",
+   "context": "short",
+   "call": 12,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-rise-04",
+   "context": "short",
+   "call": 17,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  },
+  {
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "call": 9,
+   "cur": "B",
+   "rec": "A",
+   "direction": "B->A",
+   "c1_vs_c23": false
+  }
+ ]
+}

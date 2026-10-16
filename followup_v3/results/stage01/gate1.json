@@ -1,0 +1,117 @@
+{
+ "a_C1_vs_C2C3_disagreement": {
+  "max_rate": 0.0138248847926267,
+  "cells_passing": [],
+  "pass": false
+ },
+ "C0_pairs_reported_separately": [
+  {
+   "context": "short",
+   "h": "1",
+   "pair": "C0-C1",
+   "n_points": 236,
+   "rate": 0.0
+  },
+  {
+   "context": "short",
+   "h": "1",
+   "pair": "C0-C2",
+   "n_points": 236,
+   "rate": 0.0
+  },
+  {
+   "context": "short",
+   "h": "1",
+   "pair": "C0-C3",
+   "n_points": 236,
+   "rate": 0.0
+  },
+  {
+   "context": "short",
+   "h": "N",
+   "pair": "C0-C1",
+   "n_points": 236,
+   "rate": 0.0
+  },
+  {
+   "context": "short",
+   "h": "N",
+   "pair": "C0-C2",
+   "n_points": 236,
+   "rate": 0.0
+  },
+  {
+   "context": "short",
+   "h": "N",
+   "pair": "C0-C3",
+   "n_points": 236,
+   "rate": 0.0
+  },
+  {
+   "context": "long",
+   "h": "1",
+   "pair": "C0-C1",
+   "n_points": 217,
+   "rate": 0.0138248847926267
+  },
+  {
+   "context": "long",
+   "h": "1",
+   "pair": "C0-C2",
+   "n_points": 217,
+   "rate": 0.0
+  },
+  {
+   "context": "long",
+   "h": "1",
+   "pair": "C0-C3",
+   "n_points": 217,
+   "rate": 0.0
+  },
+  {
+   "context": "long",
+   "h": "N",
+   "pair": "C0-C1",
+   "n_points": 217,
+   "rate": 0.0
+  },
+  {
+   "context": "long",
+   "h": "N",
+   "pair": "C0-C2",
+   "n_points": 217,
+   "rate": 0.0
+  },
+  {
+   "context": "long",
+   "h": "N",
+   "pair": "C0-C3",
+   "n_points": 217,
+   "rate": 0.0
+  }
+ ],
+ "b_S_gap_short": {
+  "S_B": 0.54,
+  "S_A": 0.14,
+  "gap": 0.4,
+  "pass": true
+ },
+ "c_A_enough_short": {
+  "rate": 0.18,
+  "both_zero": 0.0,
+  "pass": false
+ },
+ "b_S_gap_long": {
+  "S_B": 0.42,
+  "S_A": 0.02,
+  "gap": 0.39999999999999997,
+  "pass": true
+ },
+ "c_A_enough_long": {
+  "rate": 0.14,
+  "both_zero": 0.02,
+  "pass": false
+ },
+ "gate1_pass": false,
+ "note": "(b),(c) evaluated per context; gate requires each context to pass (stricter reading)"
+}

@@ -17,3 +17,12 @@ SIGINT A (2527413)
 SIGINT B (2527414)
 SIGINT R (2527415)
 2026-10-16 17:28:18 servers stopped
+A ready after 27s
+B ready after 6s
+R ready after 0s
+2026-10-16 17:30:07 START [A B R] followup_v3/stage1_chain.sh
+2026-10-16 18:36:24 END rc=0 followup_v3/stage1_chain.sh
+SIGINT A (2543818)
+SIGINT B (2543819)
+SIGINT R (2543821)
+2026-10-16 18:36:24 servers stopped
