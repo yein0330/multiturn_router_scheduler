@@ -1,0 +1,45 @@
+{
+ "same_state_v2_branch_next_call": {
+  "n": 40,
+  "n_needB": 13,
+  "n_Aenough": 18,
+  "auc_margin": 0.9002849002849003,
+  "R_greedy_LARGE": 17
+ },
+ "same_state_v1_initial": {
+  "n": 10,
+  "n_needB": 3,
+  "auc_margin": 1.0
+ },
+ "same_state_pooled": {
+  "n": 50,
+  "n_needB": 16,
+  "auc_margin": 0.8878676470588235
+ },
+ "different_path_proxy_P4": {
+  "short": {
+   "n": 250,
+   "n_needB": 86,
+   "auc_margin": 0.6934912081678957
+  },
+  "long": {
+   "n": 250,
+   "n_needB": 75,
+   "auc_margin": 0.6894476190476191
+  },
+  "note": "proxy label from different policy paths (P1/P2), not same-state"
+ },
+ "margin_distribution_all_calls": {
+  "n": 3937,
+  "pct": {
+   "p1": -24.5,
+   "p10": -19.25,
+   "p25": -15.125,
+   "p50": -2.75,
+   "p75": 13.75,
+   "p90": 21.625,
+   "p99": 26.125
+  },
+  "share_abs_lt_1": 0.0190500381000762
+ }
+}

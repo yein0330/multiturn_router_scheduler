@@ -2,3 +2,4 @@
 __pycache__/
 logs/
 .gpu_runner.lock
+followup_v3/data/*.jsonl

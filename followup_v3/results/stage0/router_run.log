@@ -1,0 +1,30 @@
+router calls 3937 unique prompts 801
+0
+200
+400
+600
+800
+{
+ "candidate_tokenization": {
+  "SMALL": [
+   9501,
+   3919,
+   151645
+  ],
+  "LARGE": [
+   43,
+   29759,
+   151645
+  ]
+ },
+ "method": "full-candidate conditional log-likelihood via prompt_logprobs (2 extra prompt-only R calls per decision)",
+ "first_token_logprob_used": false,
+ "forced_decoding": false,
+ "n_router_calls": 3937,
+ "n_unique_prompts": 801,
+ "prompt_hash_logged": false,
+ "len_match_rate": 1.0,
+ "greedy_regen_match_rate": 0.9974599949199898,
+ "score_argmax_match_rate": 0.9969519939039878,
+ "extra_overhead": "2 additional R prefill calls per decision; NOT an 'no extra LLM call' implementation"
+}

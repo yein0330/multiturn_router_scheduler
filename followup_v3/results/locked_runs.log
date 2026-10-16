@@ -1,0 +1,19 @@
+R ready after 30s
+2026-10-16 17:09:54 START [R] .venv/bin/python followup_v3/src/stage0_router.py
+2026-10-16 17:12:23 END rc=0 .venv/bin/python followup_v3/src/stage0_router.py
+SIGINT R (2514040)
+2026-10-16 17:12:24 servers stopped
+R ready after 27s
+2026-10-16 17:13:37 START [R] .venv/bin/python followup_v3/src/stage0_router_labels.py score
+2026-10-16 17:13:48 END rc=0 .venv/bin/python followup_v3/src/stage0_router_labels.py score
+SIGINT R (2519667)
+2026-10-16 17:13:48 servers stopped
+A ready after 27s
+B ready after 3s
+R ready after 0s
+2026-10-16 17:18:53 START [A B R] .venv/bin/python followup_v3/src/agent_runner.py --sessions followup_v3/data/smoke.jsonl --run-id smoke
+2026-10-16 17:28:18 END rc=0 .venv/bin/python followup_v3/src/agent_runner.py --sessions followup_v3/data/smoke.jsonl --run-id smoke
+SIGINT A (2527413)
+SIGINT B (2527414)
+SIGINT R (2527415)
+2026-10-16 17:28:18 servers stopped
