@@ -1,0 +1,18 @@
+{
+ "rows_by_src": {
+  "existing|long": 100,
+  "existing|short": 100,
+  "followup_v1|short": 50,
+  "reused_P1|long": 50,
+  "reused_P1|short": 50,
+  "reused_P2|long": 50,
+  "reused_P2|short": 50,
+  "v2_main|long": 200,
+  "v2_main|short": 200
+ },
+ "v2_hit_mismatch": 0,
+ "v2_truncated": 0,
+ "v2_runs": 400,
+ "v2_unique": 400,
+ "baseline_reuse": true
+}

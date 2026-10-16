@@ -1,0 +1,10 @@
+{
+ "path_runs": 240,
+ "expected": 240,
+ "reconstruct_ok_all": true,
+ "first_hit_equals_expected": 240,
+ "hit_mismatch_turns": 0,
+ "points_paths_with_text_variation": 0,
+ "points_paths_with_quality_variation": 0,
+ "prep_s_median": 0.32624966849107295
+}

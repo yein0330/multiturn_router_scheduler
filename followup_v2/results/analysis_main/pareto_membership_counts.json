@@ -1,0 +1,18 @@
+{
+ "short": {
+  "AAAAA": 50,
+  "AAAAB": 12,
+  "AAABB": 6,
+  "ABBBB": 16,
+  "BBBBB": 7,
+  "AABBB": 15
+ },
+ "long": {
+  "AABBB": 8,
+  "AAAAA": 50,
+  "AAAAB": 9,
+  "ABBBB": 10,
+  "BBBBB": 18,
+  "AAABB": 9
+ }
+}

@@ -1,0 +1,423 @@
+{
+ "rule": "reuse P1/P2 for all 50 sessions iff (a) step outcomes identical in >= 38/40 runs and (b) median latency ratio new/old in [0.95, 1.05] for each condition; otherwise run BBBBB/AAAAA for all 50 sessions x 2 conditions in the same interleaved schedule and use only new baselines for latency comparisons",
+ "n": 40,
+ "same_step_outcomes": 40,
+ "same_text": 40,
+ "median_latency_ratio": {
+  "short": 0.9986404244434636,
+  "long": 0.998656904996055
+ },
+ "ratio_range": {
+  "short": [
+   0.9899110828936829,
+   1.001121204877766
+  ],
+  "long": [
+   0.9916843694883367,
+   1.0032001356107993
+  ]
+ },
+ "reuse_old_baselines": true,
+ "rows": [
+  {
+   "session_id": "eval-S5_verifier-05",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 6.581044532125816,
+   "latency_old": 6.636057955096476,
+   "ratio": 0.9917099242738816
+  },
+  {
+   "session_id": "eval-S5_verifier-05",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 14.893640573776793,
+   "latency_old": 14.930343853193335,
+   "ratio": 0.9975416989871474
+  },
+  {
+   "session_id": "eval-S4_accumulation-02",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 7.753015053051058,
+   "latency_old": 7.791636638867203,
+   "ratio": 0.9950431998299962
+  },
+  {
+   "session_id": "eval-S4_accumulation-02",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 28.505128779099323,
+   "latency_old": 28.536048529029358,
+   "ratio": 0.9989164670119417
+  },
+  {
+   "session_id": "eval-S2_shift-07",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 6.781171942013316,
+   "latency_old": 6.773899930878542,
+   "ratio": 1.0010735338887462
+  },
+  {
+   "session_id": "eval-S4_accumulation-01",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 4.9281915430910885,
+   "latency_old": 4.937186028924771,
+   "ratio": 0.9981782161374946
+  },
+  {
+   "session_id": "eval-S3_alternating-07",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 7.737997539050411,
+   "latency_old": 7.77619861299172,
+   "ratio": 0.9950874359256351
+  },
+  {
+   "session_id": "eval-S3_alternating-07",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 5.85165598988533,
+   "latency_old": 5.870756600983441,
+   "ratio": 0.9967464822004525
+  },
+  {
+   "session_id": "eval-S5_verifier-05",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 18.280699744005688,
+   "latency_old": 18.29947371192975,
+   "ratio": 0.9989740706088273
+  },
+  {
+   "session_id": "eval-S1_constant-07",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 4.333164835057687,
+   "latency_old": 4.340045904973522,
+   "ratio": 0.9984145167893387
+  },
+  {
+   "session_id": "eval-S1_constant-07",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 12.601710889081005,
+   "latency_old": 12.601250463107135,
+   "ratio": 1.0000365381178018
+  },
+  {
+   "session_id": "eval-S2_shift-03",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 3.5824688179418445,
+   "latency_old": 3.5824188229162246,
+   "ratio": 1.0000139556618284
+  },
+  {
+   "session_id": "eval-S2_shift-03",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 13.63331693696091,
+   "latency_old": 13.652447045082226,
+   "ratio": 0.9985987780755973
+  },
+  {
+   "session_id": "eval-S3_alternating-07",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 16.94168173201615,
+   "latency_old": 16.959482019999996,
+   "ratio": 0.998950422662505
+  },
+  {
+   "session_id": "eval-S5_verifier-05",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 9.315815936017316,
+   "latency_old": 9.393932406965178,
+   "ratio": 0.9916843694883367
+  },
+  {
+   "session_id": "eval-S5_verifier-00",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 13.629407353990246,
+   "latency_old": 13.6286052041105,
+   "ratio": 1.0000588578117666
+  },
+  {
+   "session_id": "eval-S3_alternating-07",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 13.88639733591117,
+   "latency_old": 13.88977585406974,
+   "ratio": 0.9997567622261103
+  },
+  {
+   "session_id": "eval-S5_verifier-00",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 10.887613247905392,
+   "latency_old": 10.903218421968631,
+   "ratio": 0.9985687552556228
+  },
+  {
+   "session_id": "eval-S3_alternating-00",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 9.922140607028268,
+   "latency_old": 9.934906644979492,
+   "ratio": 0.9987150319165128
+  },
+  {
+   "session_id": "eval-S2_shift-03",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 7.442578439018689,
+   "latency_old": 7.418837154051289,
+   "ratio": 1.0032001356107993
+  },
+  {
+   "session_id": "eval-S2_shift-07",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 12.296492713037878,
+   "latency_old": 12.29481788398698,
+   "ratio": 1.0001362223553616
+  },
+  {
+   "session_id": "eval-S4_accumulation-01",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 7.05558832193492,
+   "latency_old": 7.094324956124183,
+   "ratio": 0.9945397716584967
+  },
+  {
+   "session_id": "eval-S3_alternating-00",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 4.869833566015586,
+   "latency_old": 4.873179841029923,
+   "ratio": 0.999313328232592
+  },
+  {
+   "session_id": "eval-S1_constant-07",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 15.244377557130065,
+   "latency_old": 15.222087023954373,
+   "ratio": 1.0014643546013509
+  },
+  {
+   "session_id": "eval-S4_accumulation-02",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 6.241658960119821,
+   "latency_old": 6.246831574011594,
+   "ratio": 0.9991719620049799
+  },
+  {
+   "session_id": "eval-S4_accumulation-02",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 20.6503009290318,
+   "latency_old": 20.64653467014432,
+   "ratio": 1.0001824160299853
+  },
+  {
+   "session_id": "eval-S1_constant-07",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 6.3995535100693814,
+   "latency_old": 6.414803623978514,
+   "ratio": 0.9976226686266547
+  },
+  {
+   "session_id": "eval-S5_verifier-00",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 10.34810591704445,
+   "latency_old": 10.399234166950919,
+   "ratio": 0.9950834600812283
+  },
+  {
+   "session_id": "eval-S1_constant-05",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 14.606872097006999,
+   "latency_old": 14.605934880150016,
+   "ratio": 1.0000641668516719
+  },
+  {
+   "session_id": "eval-S2_shift-07",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 3.9782190520782024,
+   "latency_old": 3.988135598017834,
+   "ratio": 0.9975134882714217
+  },
+  {
+   "session_id": "eval-S1_constant-05",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 5.194089143071324,
+   "latency_old": 5.247025952965487,
+   "ratio": 0.9899110828936829
+  },
+  {
+   "session_id": "eval-S2_shift-03",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 10.756195222144015,
+   "latency_old": 10.744148830068298,
+   "ratio": 1.001121204877766
+  },
+  {
+   "session_id": "eval-S4_accumulation-01",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 14.344284005870577,
+   "latency_old": 14.370108498027548,
+   "ratio": 0.9982029020754773
+  },
+  {
+   "session_id": "eval-S4_accumulation-01",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 18.507654266955797,
+   "latency_old": 18.505920916970354,
+   "ratio": 1.000093664616488
+  },
+  {
+   "session_id": "eval-S1_constant-05",
+   "policy": "AAAAA",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 7.555587210925296,
+   "latency_old": 7.592893768916838,
+   "ratio": 0.995086648236241
+  },
+  {
+   "session_id": "eval-S3_alternating-00",
+   "policy": "BBBBB",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 7.534663558995817,
+   "latency_old": 7.54438001406379,
+   "ratio": 0.9987120936313043
+  },
+  {
+   "session_id": "eval-S2_shift-07",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 14.135137072997168,
+   "latency_old": 14.176151288032997,
+   "ratio": 0.9971068159331473
+  },
+  {
+   "session_id": "eval-S1_constant-05",
+   "policy": "BBBBB",
+   "context": "long",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 17.529802857956383,
+   "latency_old": 17.576507332967594,
+   "ratio": 0.9973427897746437
+  },
+  {
+   "session_id": "eval-S3_alternating-00",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 3.212500606197864,
+   "latency_old": 3.210751569888089,
+   "ratio": 1.0005447435815895
+  },
+  {
+   "session_id": "eval-S5_verifier-00",
+   "policy": "AAAAA",
+   "context": "short",
+   "same_text": true,
+   "same_step_outcomes": true,
+   "latency_new": 7.635130887909327,
+   "latency_old": 7.687900195945986,
+   "ratio": 0.9931360570907924
+  }
+ ]
+}
