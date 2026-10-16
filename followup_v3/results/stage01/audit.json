@@ -1,0 +1,55 @@
+{
+ "smoke": {
+  "expected_runs": 60,
+  "unique_runs": 60,
+  "duplicate_runs": 0,
+  "calls": 1090,
+  "cache_pred_mismatch": 0,
+  "truncated": 0,
+  "http_errors": 0,
+  "no_tool_call_turns": 33,
+  "parse_error_turns": 0,
+  "tool_errors": 227,
+  "tool_calls": 1068,
+  "more_than_3_tool_calls_in_turn": 1,
+  "router_fallback": 0,
+  "budget_exhausted_requests": 30
+ },
+ "dev50": {
+  "expected_runs": 300,
+  "unique_runs": 300,
+  "duplicate_runs": 0,
+  "calls": 5558,
+  "cache_pred_mismatch": 0,
+  "truncated": 19,
+  "http_errors": 0,
+  "no_tool_call_turns": 125,
+  "parse_error_turns": 12,
+  "tool_errors": 1455,
+  "tool_calls": 5443,
+  "more_than_3_tool_calls_in_turn": 0,
+  "router_fallback": 0,
+  "budget_exhausted_requests": 212
+ },
+ "profile": {
+  "expected": 360,
+  "calls": 360,
+  "hit_eq_expected": 360,
+  "errors": 0
+ },
+ "paired": {
+  "rows": 144,
+  "matched_state": 144,
+  "varying_output": 0
+ },
+ "router_scoring_dev50": {
+  "n": 1803,
+  "len_match_rate": 1.0,
+  "score_argmax_match_rate": 0.9877981142540211,
+  "note": "offline scoring after the run; 2 extra prompt-only R calls per decision; not used online",
+  "first_attempt_failed": "R engine OOM in prompt_logprobs at gpu-memory-utilization 0.90 (1,413-token prompt, ~820 MiB log_softmax); rerun with 0.80 (offline scoring config); 1 row from the failed attempt overwritten"
+ },
+ "excluded": {
+  "none": "no run excluded"
+ }
+}

@@ -26,3 +26,20 @@ SIGINT A (2543818)
 SIGINT B (2543819)
 SIGINT R (2543821)
 2026-10-16 18:36:24 servers stopped
+A ready after 27s
+B ready after 3s
+R ready after 0s
+2026-10-16 19:59:00 START [A B R] followup_v3/stage1_post.sh
+2026-10-16 20:02:40 END rc=22 followup_v3/stage1_post.sh
+SIGINT A (2743496)
+SIGINT B (2743497)
+2026-10-16 20:02:40 servers stopped
+R ready after 27s
+2026-10-16 20:03:38 START [R] .venv/bin/python followup_v3/src/stage1_rho.py
+2026-10-16 20:03:44 END rc=1 .venv/bin/python followup_v3/src/stage1_rho.py
+2026-10-16 20:03:44 servers stopped
+R ready after 27s
+2026-10-16 20:04:48 START [R] .venv/bin/python followup_v3/src/stage1_rho.py
+2026-10-16 20:09:19 END rc=0 .venv/bin/python followup_v3/src/stage1_rho.py
+SIGINT R (2753433)
+2026-10-16 20:09:20 servers stopped

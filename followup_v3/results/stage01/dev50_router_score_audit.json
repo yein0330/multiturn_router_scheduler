@@ -1,0 +1,6 @@
+{
+ "n": 1803,
+ "len_match_rate": 1.0,
+ "score_argmax_match_rate": 0.9877981142540211,
+ "note": "offline scoring after the run; 2 extra prompt-only R calls per decision; not used online"
+}

@@ -41,7 +41,15 @@ def main():
         for c in cs:
             msgs, _ = rebuild_prompts(A, sessions[sid], ctx, cs, c["call"])
             ids = R.render_ids(router.build_messages(R.tok, msgs, "", c["active_before"]))
-            sc = score(R, ids, cands)
+            try:
+                sc = score(R, ids, cands)
+            except KeyError:
+                body = {"model": R.name, "prompt": ids + cands["SMALL"], "max_tokens": 1, "temperature": 0.0, "prompt_logprobs": 0}
+                err = R.http.post(f"{R.base}/v1/completions", json=body, timeout=120).text[:300]
+                out.write(json.dumps({"session_id": sid, "context": ctx, "call": c["call"], "error": err,
+                                      "router_prompt_tokens": len(ids)}) + "\n")
+                n += 1
+                continue
             m = sc["LARGE"] - sc["SMALL"]
             n += 1
             match_len += len(ids) == c["router"]["input_tokens"]

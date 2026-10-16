@@ -12,10 +12,10 @@ for r in $ROLES; do
   if [ "$n" -gt 0 ]; then echo "$(date '+%F %T') ABORT GPU ${GPU[$r]} busy" >> $LOG; exit 1; fi
 done
 export PYTHONPATH=$PWD/src
-.venv/bin/python -m mrp.serve start configs/models.json $ROLES >> $LOG 2>&1 || { echo "$(date '+%F %T') ABORT serve" >> $LOG; exit 1; }
+.venv/bin/python -m mrp.serve start ${MODELS_CFG:-configs/models.json} $ROLES >> $LOG 2>&1 || { echo "$(date '+%F %T') ABORT serve" >> $LOG; exit 1; }
 echo "$(date '+%F %T') START [$ROLES] $*" >> $LOG
 "$@"; rc=$?
 echo "$(date '+%F %T') END rc=$rc $*" >> $LOG
-.venv/bin/python -m mrp.serve stop configs/models.json >> $LOG 2>&1
+.venv/bin/python -m mrp.serve stop ${MODELS_CFG:-configs/models.json} >> $LOG 2>&1
 echo "$(date '+%F %T') servers stopped" >> $LOG
 exit $rc

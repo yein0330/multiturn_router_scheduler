@@ -1,0 +1,62 @@
+{
+ "config_id": "mrp_models_v1_R_offline_scoring",
+ "engine": {
+  "name": "vllm",
+  "version": "0.19.1",
+  "torch": "2.10.0+cu128",
+  "why": "driver 535 (CUDA 12.2); 0.19.1 is the last cu128 build (same constraint as ~/switchcost D1)"
+ },
+ "env": {
+  "VLLM_SERVER_DEV_MODE": "1",
+  "PYTORCH_NVML_BASED_CUDA_CHECK": "1",
+  "PYTHONHASHSEED": "0",
+  "HF_HUB_OFFLINE": "1"
+ },
+ "models": {
+  "A": {
+   "hf_id": "Qwen/Qwen3-1.7B",
+   "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+   "gpu": 1,
+   "port": 8201,
+   "max_model_len": 32768
+  },
+  "B": {
+   "hf_id": "Qwen/Qwen3-8B",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "gpu": 2,
+   "port": 8202,
+   "max_model_len": 32768
+  },
+  "R": {
+   "hf_id": "Qwen/Qwen3-4B-Instruct-2507",
+   "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+   "gpu": 3,
+   "port": 8203,
+   "max_model_len": 16384,
+   "local_path": "/home/yein39/.cache/huggingface/hub/models--Qwen--Qwen3-4B-Instruct-2507/snapshots/cdbee75f17c01a7cc42f958dc650907174af0554",
+   "served_model_name": "Qwen/Qwen3-4B-Instruct-2507",
+   "note": "served from the local snapshot dir: cache lacks README/LICENSE/.gitattributes, so hub offline mode rejects the repo id; weights/tokenizer files are the pinned revision"
+  }
+ },
+ "serve_flags": {
+  "dtype": "bfloat16",
+  "tensor-parallel-size": 1,
+  "gpu-memory-utilization": 0.8,
+  "enable-prefix-caching": true,
+  "enable-prompt-tokens-details": true,
+  "generation-config": "vllm",
+  "seed": 0,
+  "max-num-seqs": 8
+ },
+ "decoding": {
+  "temperature": 0.0,
+  "max_tokens": 1024,
+  "enable_thinking": false,
+  "note": "greedy; thinking off for A and B (same template, rendered client-side, sent as token ids)"
+ },
+ "router_decoding": {
+  "temperature": 0.0,
+  "max_tokens": 4
+ },
+ "note_v3": "followup_v3 offline router scoring only: R gpu-memory-utilization 0.80 (prompt_logprobs over full vocab OOMs at 0.90 for ~1.4K-token prompts). Same weights/revision; KV pool smaller; not used for any policy run."
+}
