@@ -1,0 +1,109 @@
+{
+ "config_id": "followup_v2",
+ "created": "2026-10-16 13:45 KST, before any v2 GPU run",
+ "base_commit": "5c815c0a774a1411b3791ae1b477c05381f40fea",
+ "status": "post-hoc exploration designed after seeing stage A/B2 and followup_v1 results; not confirmatory",
+ "unchanged": {
+  "models": "configs/models.json (revisions, tokenizer, chat template, served from same snapshots)",
+  "engine": "vLLM 0.19.1",
+  "decoding": "greedy, max_tokens 1024, thinking off",
+  "verifier": "S5 only, 1 retry/step",
+  "evaluator": "hidden 3 tables",
+  "sessions": "data/eval/eval.jsonl (50)"
+ },
+ "fixed_switch_policies": {
+  "BBBBB": 0,
+  "ABBBB": 1,
+  "AABBB": 2,
+  "AAABB": 3,
+  "AAAAB": 4,
+  "AAAAA": 5,
+  "rule": "model = B if task step >= s else A; applies to all attempts (retries) of a step; no router; once B stays B"
+ },
+ "conditions": [
+  [
+   "short",
+   "retain"
+  ],
+  [
+   "long",
+   "retain"
+  ]
+ ],
+ "main_run": {
+  "policies": [
+   "ABBBB",
+   "AABBB",
+   "AAABB",
+   "AAAAB"
+  ],
+  "sessions": "all 50",
+  "conditions": "both",
+  "n_runs": 400,
+  "order": "per session, the 8 (policy, condition) combos shuffled with seed 31 (conditions interleaved in time)"
+ },
+ "baseline_check": {
+  "policies": [
+   "BBBBB",
+   "AAAAA"
+  ],
+  "seed": 20261020,
+  "sessions": [
+   "eval-S1_constant-05",
+   "eval-S1_constant-07",
+   "eval-S2_shift-03",
+   "eval-S2_shift-07",
+   "eval-S3_alternating-00",
+   "eval-S3_alternating-07",
+   "eval-S4_accumulation-01",
+   "eval-S4_accumulation-02",
+   "eval-S5_verifier-00",
+   "eval-S5_verifier-05"
+  ],
+  "conditions": "both",
+  "n_runs": 40,
+  "compare_to": "P2/P1 in results/evalA (short) and results/evalB_long_retain (long)",
+  "reuse_rule": "reuse P1/P2 for all 50 sessions iff (a) step outcomes identical in >= 38/40 runs and (b) median latency ratio new/old in [0.95, 1.05] for each condition; otherwise run BBBBB/AAAAA for all 50 sessions x 2 conditions in the same interleaved schedule and use only new baselines for latency comparisons",
+  "not_independent_samples": true
+ },
+ "branch": {
+  "seed": 20261021,
+  "sessions": [
+   "eval-S1_constant-06",
+   "eval-S1_constant-08",
+   "eval-S2_shift-00",
+   "eval-S2_shift-09",
+   "eval-S3_alternating-06",
+   "eval-S3_alternating-09",
+   "eval-S4_accumulation-03",
+   "eval-S4_accumulation-05",
+   "eval-S5_verifier-06",
+   "eval-S5_verifier-07"
+  ],
+  "source_path": "P1 (always A): evalA for short, evalB_long_retain for long",
+  "branch_points": "start of task step 1 and step 3 (attempt 0)",
+  "conditions": "short/retain, long/retain",
+  "paths": {
+   "stayA": "A for all remaining steps",
+   "switchB": "B from the branch step to the end"
+  },
+  "restore": "reset A,B,R prefix caches; replay to A the logged prompts A received before the branch turn (max_tokens=1); B stays empty; verify prompt hash and first-call hits (A expected = block-floored LCP, B expected = 0)",
+  "reps": 3,
+  "order": "all (point, path, rep) shuffled with seed 41",
+  "n_path_runs": 240,
+  "excluded_cost": "restore/prep time recorded separately (prep_s), not in path latency"
+ },
+ "lock": "flock on ~/multiturn_routing_pilot/.gpu_runner.lock held by followup_v2/run_v2.sh for all GPU work",
+ "analysis": {
+  "pairing": "same session",
+  "ci": "session-level bootstrap (2000), stratified by scenario, descriptive only",
+  "best_in_set": "per-session ex-post best = within these six policies only; no weighted quality-latency score",
+  "labels": "difficulty/scenario labels used only in analysis"
+ },
+ "do_not": [
+  "change thresholds/samples after results",
+  "download models/data",
+  "train routers",
+  "start new experiments after completion"
+ ]
+}
