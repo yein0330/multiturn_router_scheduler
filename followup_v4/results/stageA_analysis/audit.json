@@ -1,0 +1,16 @@
+{
+ "runs": 160,
+ "expected": 160,
+ "unique": 160,
+ "calls": 3021,
+ "router_calls": 1515,
+ "cache_mismatch": 0,
+ "truncated": 24,
+ "http_errors": 0,
+ "router_fallback": 0,
+ "T0_reproduces_v3_text": {
+  "runs": 60,
+  "identical": 60,
+  "differ": []
+ }
+}
