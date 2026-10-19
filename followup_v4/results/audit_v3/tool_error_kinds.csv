@@ -1,0 +1,28 @@
+kind,A,B,total
+unknown column 'None,1097,185,1282
+op 'X' needs a numeric column,21,7,28
+unknown source 'X' (use 'X' or an existing handle),0,27,27
+unknown op 'equals,27,0,27
+unknown op 'not_equal,13,0,13
+unknown column 'row,12,0,12
+bad arguments: Env.aggregate() got an unexpected keyword argument 'X',5,6,11
+unknown column 'id,0,8,8
+unknown tool 'sort,6,0,6
+unknown column 'suite,6,0,6
+unknown column 'count,5,0,5
+bad arguments: Env.aggregate() missing N required positional argument: 'X',0,4,4
+unknown op 'not_in,3,1,4
+unknown column 'row_count,3,0,3
+unknown column ,0,3,3
+bad arguments: Env.get_rows() got an unexpected keyword argument 'X',2,0,2
+unknown op 'like,2,0,2
+unknown op 'contains,2,0,2
+unknown column 'day <= N,0,2,2
+unknown column 'family,1,0,1
+unknown column 'X'cancelled,1,0,1
+op 'X' needs a numeric column and numeric value,1,0,1
+unknown column 'sum_nights,1,0,1
+unknown op 'equal,1,0,1
+unknown op '=,1,0,1
+unknown op 'min,1,0,1
+unknown tool 'sort_by,1,0,1

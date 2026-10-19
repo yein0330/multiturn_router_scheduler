@@ -1,0 +1,149 @@
+{
+ "runs": 300,
+ "unique_runs": 300,
+ "calls": 5558,
+ "cache_pred_mismatch": 0,
+ "L0_minus_alwaysB_short": {
+  "d_q": -0.23,
+  "d_S": -0.3,
+  "d_latency_s": -1.5827080783154814,
+  "n": 50,
+  "L0": {
+   "q": 0.625,
+   "S": 0.24,
+   "lat": 8.5867797542701
+  },
+  "always_B": {
+   "q": 0.855,
+   "S": 0.54,
+   "lat": 10.169487832585583
+  }
+ },
+ "L0_minus_alwaysB_long": {
+  "d_q": -0.215,
+  "d_S": -0.22,
+  "d_latency_s": 0.7688145970692858,
+  "n": 50,
+  "L0": {
+   "q": 0.575,
+   "S": 0.2,
+   "lat": 12.147027806158876
+  },
+  "always_B": {
+   "q": 0.79,
+   "S": 0.42,
+   "lat": 11.37821320908959
+  }
+ },
+ "C1_C2_disagree_h1": {
+  "long": "3/217",
+  "short": "0/236"
+ },
+ "tool_errors": {
+  "n": 1455,
+  "n_tool_calls": 5443,
+  "by_model": {
+   "A": {
+    "errors": 1212,
+    "tool_calls": 2962,
+    "rate": 0.4091829844699527
+   },
+   "B": {
+    "errors": 243,
+    "tool_calls": 2481,
+    "rate": 0.09794437726723096
+   }
+  },
+  "top_kinds": {
+   "unknown column 'None": 1282,
+   "op 'X' needs a numeric column": 28,
+   "unknown source 'X' (use 'X' or an existing handle)": 27,
+   "unknown op 'equals": 27,
+   "unknown op 'not_equal": 13,
+   "unknown column 'row": 12,
+   "bad arguments: Env.aggregate() got an unexpected keyword argument 'X'": 11,
+   "unknown column 'id": 8
+  }
+ },
+ "unknown_column_None": {
+  "n": 1282,
+  "by_model": {
+   "A": 1097,
+   "B": 185
+  },
+  "argument_patterns": {
+   "filter condition without 'column' key; keys=hotel,op,value": 399,
+   "filter condition without 'column' key; keys=state": 158,
+   "filter condition without 'column' key; keys=op,state,value": 155,
+   "filter condition without 'column' key; keys=room_type,value": 137,
+   "filter condition without 'column' key; keys=op,room_type,value": 108,
+   "filter condition without 'column' key; keys=state,value": 98,
+   "filter condition without 'column' key; keys=hotel,value": 81,
+   "filter condition without 'column' key; keys=day,value": 74
+  },
+  "examples": [
+   "{\"source\": \"table\", \"conditions\": [{\"day\": \">=\", \"value\": 10}]}",
+   "{\"source\": \"table\", \"conditions\": [{\"day\": \"<=\", \"value\": 10}]}",
+   "{\"source\": \"table\", \"conditions\": [{\"day\": \">=\", \"value\": 10}]}",
+   "{\"source\": \"table\", \"conditions\": [{\"day\": \"<=\", \"value\": 10}]}",
+   "{\"source\": \"table\", \"conditions\": [{\"day\": \"<=\", \"value\": 10}]}"
+  ]
+ },
+ "repetition": {
+  "errors_in_runs_of_same_error_within_request": 1277,
+  "error_request_groups": 425,
+  "groups_with_repeat": 247,
+  "max_repeat": 8,
+  "errors_if_counted_once_per_request_kind": 425
+ },
+ "requests_with_any_tool_error": {
+  "n": 369,
+  "of": 1200,
+  "by_policy_context": {
+   "always_A|long": [
+    159,
+    200
+   ],
+   "always_A|short": [
+    73,
+    200
+   ],
+   "always_B|long": [
+    3,
+    200
+   ],
+   "L0|long": [
+    63,
+    200
+   ],
+   "always_B|short": [
+    14,
+    200
+   ],
+   "L0|short": [
+    57,
+    200
+   ]
+  }
+ },
+ "router_input_R0": {
+  "calls": 1803,
+  "current_message_role": {
+   "tool": 1355,
+   "user": 448
+  },
+  "request_dropped_by_window": 629,
+  "request_truncated_in_window": 0,
+  "request_visible": 1174,
+  "tool_messages_labeled_ASSISTANT": "router.py labels every non-user role as ASSISTANT; tool results appear as 'ASSISTANT: {...}'",
+  "max_input_tokens": 2070
+ },
+ "latency_definition": {
+  "latency_s = sum(router_s + render_s + model call total_s + tool_exec_s)": true,
+  "max_abs_recompute_diff_s": 0.0,
+  "wall_minus_latency_s_median": 0.42355692057753913,
+  "wall_minus_latency_s_max": 1.3773510447354056,
+  "note": "wall includes Prometheus scraping and bookkeeping; isolation reset is outside both",
+  "same_as_previous_experiments": "same component-sum definition as v1/v2 (no gate/evict/verifier terms in v3)"
+ }
+}

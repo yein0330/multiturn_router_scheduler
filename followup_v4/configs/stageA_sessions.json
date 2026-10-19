@@ -1,0 +1,15 @@
+{
+ "rule": "per scenario and subtype parity (index%2), the dev50 session with the smallest sha256('v4A|'+session_id); no outcome information used",
+ "sessions": [
+  "dev-alt-00",
+  "dev-alt-01",
+  "dev-chain-08",
+  "dev-chain-01",
+  "dev-const-08",
+  "dev-const-07",
+  "dev-expose-06",
+  "dev-expose-01",
+  "dev-rise-00",
+  "dev-rise-07"
+ ]
+}

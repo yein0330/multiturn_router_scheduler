@@ -1,0 +1,90 @@
+{
+ "T1_valid_accepted": [
+  [
+   "==",
+   true
+  ],
+  [
+   "!=",
+   true
+  ],
+  [
+   "<",
+   true
+  ],
+  [
+   "<=",
+   true
+  ],
+  [
+   ">",
+   true
+  ],
+  [
+   ">=",
+   true
+  ],
+  [
+   "in",
+   true
+  ],
+  [
+   "agg:count",
+   true
+  ],
+  [
+   "agg:sum",
+   true
+  ],
+  [
+   "agg:mean",
+   true
+  ],
+  [
+   "agg:median",
+   true
+  ],
+  [
+   "agg:min",
+   true
+  ],
+  [
+   "agg:max",
+   true
+  ],
+  [
+   "agg:count_distinct",
+   true
+  ]
+ ],
+ "T1_invalid_rejected": [
+  [
+   "missing column",
+   "unknown column 'None"
+  ],
+  [
+   "op not in enum",
+   "unknown op 'equals"
+  ],
+  [
+   "missing value",
+   null
+  ]
+ ],
+ "R1_request_visible": [
+  1803,
+  1803
+ ],
+ "router_tokens": {
+  "R0": [
+   340.0,
+   1411.0,
+   2070
+  ],
+  "R1": [
+   356.0,
+   678.0,
+   1203
+  ]
+ }
+}
