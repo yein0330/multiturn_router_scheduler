@@ -1,0 +1,4 @@
+[1/4] train-const-13 short T1 always_A q=0.00 S=False calls=18 lat=3.6s | calls=18
+[2/4] train-const-13 short T1 always_B q=1.00 S=True calls=21 lat=11.8s | calls=39
+[3/4] train-const-13 long T1 always_B q=0.75 S=False calls=16 lat=11.2s | calls=55
+[4/4] train-const-13 long T1 always_A q=0.00 S=False calls=26 lat=5.5s | calls=81
