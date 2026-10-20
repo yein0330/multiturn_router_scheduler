@@ -1,0 +1,112 @@
+{
+ "counts": {
+  "train": {
+   "B_needed": 152,
+   "A_enough": 208,
+   "both_fail": 40
+  },
+  "dev": {
+   "B_needed": 61,
+   "both_fail": 30,
+   "A_enough": 69
+  }
+ },
+ "R1s_vs_R1_agreement": 0.9357142857142857,
+ "R1s_missing": 0,
+ "confusion_by_kind_P2_P0_dev": {
+  "hard": {
+   "B_needed|P2:A|R1:A": 6,
+   "both_fail|P2:B|R1:A": 14,
+   "both_fail|P2:A|R1:A": 10,
+   "B_needed|P2:B|R1:A": 31,
+   "A_enough|P2:B|R1:A": 2,
+   "B_needed|P2:B|R1:B": 4,
+   "both_fail|P2:B|R1:B": 3
+  },
+  "easy": {
+   "A_enough|P2:A|R1:A": 46,
+   "A_enough|P2:B|R1:A": 8,
+   "B_needed|P2:B|R1:A": 4,
+   "B_needed|P2:A|R1:A": 2
+  },
+  "follow": {
+   "A_enough|P2:A|R1:A": 12,
+   "B_needed|P2:B|R1:A": 3,
+   "B_needed|P2:A|R1:A": 11,
+   "both_fail|P2:A|R1:A": 3,
+   "A_enough|P2:B|R1:A": 1
+  }
+ },
+ "results": [
+  {
+   "setting": "both_fail_as_negative",
+   "predictor": "P0_R1_decision",
+   "n_dev": 160,
+   "pos_dev": 61,
+   "auc": 0.5176353700943865,
+   "recall": 0.06557377049180328,
+   "precision": 0.5714285714285714
+  },
+  {
+   "setting": "both_fail_as_negative",
+   "predictor": "P1_R1s_margin",
+   "n_dev": 160,
+   "pos_dev": 61,
+   "auc": 0.7401887729756582,
+   "recall_at_prec0.6": 0.6557377049180327,
+   "threshold": -14.499999523162955
+  },
+  {
+   "setting": "both_fail_as_negative",
+   "predictor": "P2_tfidf_obs_logreg",
+   "n_train": 400,
+   "pos_train": 152,
+   "n_dev": 160,
+   "pos_dev": 61,
+   "auc": 0.7449908925318761,
+   "C": 100.0,
+   "recall_at_prec0.6": 0.6885245901639344,
+   "threshold": -1.2238373098673418,
+   "vocab": 103,
+   "note": "C selected on the same dev set (optimistic)"
+  },
+  {
+   "setting": "exclude_both_fail",
+   "predictor": "P0_R1_decision",
+   "n_dev": 130,
+   "pos_dev": 61,
+   "auc": 0.5327868852459017,
+   "recall": 0.06557377049180328,
+   "precision": 1.0
+  },
+  {
+   "setting": "exclude_both_fail",
+   "predictor": "P1_R1s_margin",
+   "n_dev": 130,
+   "pos_dev": 61,
+   "auc": 0.8665953908291756,
+   "recall_at_prec0.6": 0.8852459016393442,
+   "threshold": -20.25
+  },
+  {
+   "setting": "exclude_both_fail",
+   "predictor": "P2_tfidf_obs_logreg",
+   "n_train": 360,
+   "pos_train": 152,
+   "n_dev": 130,
+   "pos_dev": 61,
+   "auc": 0.804704205274412,
+   "C": 10.0,
+   "recall_at_prec0.6": 0.7868852459016393,
+   "threshold": -1.7803434262959168,
+   "vocab": 102,
+   "note": "C selected on the same dev set (optimistic)"
+  }
+ ],
+ "phrasing_check": {
+  "train_variant": [
+   "variant0"
+  ],
+  "dev_note": "dev = v4 stage-A dev sessions (variant 1, domains hotel/gym) + held-out train sessions (variant 0)"
+ }
+}

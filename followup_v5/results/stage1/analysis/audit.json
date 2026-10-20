@@ -1,0 +1,17 @@
+{
+ "branch_runs": 415,
+ "states": 68,
+ "calls": 3440,
+ "restore_hash_ok": 415,
+ "restore_rows": 415,
+ "first_hit_ok": 415,
+ "cache_mismatch": 0,
+ "truncated": 3,
+ "http_errors": 0,
+ "router_fallback": 0,
+ "replicate_pairs": 75,
+ "replicate_identical_text": 75,
+ "a0_a4_identical_text_states": 21,
+ "states_recoverable_by_B": 40,
+ "states_total": 68
+}
