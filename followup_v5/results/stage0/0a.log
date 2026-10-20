@@ -11,3 +11,10 @@
 [11/20] dev-const-07 short T1min always_B q=1.00 S=True calls=18 lat=10.5s | calls=167
 [12/20] dev-alt-00 short T1min always_B q=0.75 S=False calls=15 lat=8.9s | calls=182
 [13/20] dev-rise-07 long T1min always_B q=0.75 S=False calls=12 lat=7.6s | calls=194
+[14/20] dev-chain-01 short T1min always_B q=1.00 S=True calls=10 lat=5.4s | calls=204
+[15/20] dev-expose-01 short T1min always_B q=1.00 S=True calls=15 lat=9.5s | calls=219
+[16/20] dev-rise-00 long T1min always_B q=1.00 S=True calls=13 lat=8.8s | calls=232
+[17/20] dev-rise-07 short T1min always_B q=1.00 S=True calls=12 lat=7.1s | calls=244
+[18/20] dev-chain-08 long T1min always_B q=0.75 S=False calls=17 lat=31.4s | calls=261
+[19/20] dev-const-07 long T1min always_B q=0.25 S=False calls=20 lat=14.7s | calls=281
+[20/20] dev-rise-00 short T1min always_B q=0.75 S=False calls=19 lat=12.5s | calls=300

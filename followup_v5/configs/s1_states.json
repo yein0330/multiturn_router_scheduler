@@ -1,0 +1,1170 @@
+{
+ "rule": "first-repeat states from always_A T1 paths; per (split, context) up to 20, sha256('v5s1|sid|ctx|call') order, distinct sessions first; branch order per state random (seed 504); replicate = first 15 by sha256('v5s1rep|state_id')",
+ "available": {
+  "dev|long": 17,
+  "dev|short": 11,
+  "train|long": 40,
+  "train|short": 51
+ },
+ "excluded": {
+  "train|short|request ended at the repeat call": 2
+ },
+ "states": [
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4,
+   "state_id": "dev|short|dev-expose-01|4",
+   "order": [
+    "a1",
+    "a4",
+    "a0",
+    "a2",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 14,
+   "state_call": 15,
+   "state_id": "dev|short|dev-rise-07|15",
+   "order": [
+    "a2",
+    "a3",
+    "a4",
+    "a1",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-06",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 15,
+   "state_call": 16,
+   "state_id": "dev|short|dev-expose-06|16",
+   "order": [
+    "a3",
+    "a1",
+    "a0",
+    "a2",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-chain-08",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 5,
+   "state_call": 6,
+   "state_id": "dev|short|dev-chain-08|6",
+   "order": [
+    "a4",
+    "a2",
+    "a3",
+    "a1",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-alt-00",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 17,
+   "state_call": 18,
+   "state_id": "dev|short|dev-alt-00|18",
+   "order": [
+    "a3",
+    "a2",
+    "a0",
+    "a1",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 17,
+   "state_call": 18,
+   "state_id": "dev|short|dev-expose-01|18",
+   "order": [
+    "a2",
+    "a1",
+    "a4",
+    "a0",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 26,
+   "state_call": 27,
+   "state_id": "dev|short|dev-expose-01|27",
+   "order": [
+    "a1",
+    "a3",
+    "a4",
+    "a0",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 10,
+   "state_call": 11,
+   "state_id": "dev|short|dev-expose-01|11",
+   "order": [
+    "a3",
+    "a2",
+    "a4",
+    "a1",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-alt-00",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7,
+   "state_id": "dev|short|dev-alt-00|7",
+   "order": [
+    "a3",
+    "a4",
+    "a1",
+    "a0",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 21,
+   "state_call": 22,
+   "state_id": "dev|short|dev-rise-07|22",
+   "order": [
+    "a4",
+    "a0",
+    "a2",
+    "a3",
+    "a1"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7,
+   "state_id": "dev|short|dev-rise-07|7",
+   "order": [
+    "a0",
+    "a1",
+    "a3",
+    "a2",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-chain-08",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4,
+   "state_id": "dev|long|dev-chain-08|4",
+   "order": [
+    "a1",
+    "a4",
+    "a3",
+    "a2",
+    "a0"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-06",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8,
+   "state_id": "dev|long|dev-expose-06|8",
+   "order": [
+    "a0",
+    "a1",
+    "a4",
+    "a2",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7,
+   "state_id": "dev|long|dev-rise-07|7",
+   "order": [
+    "a4",
+    "a2",
+    "a1",
+    "a0",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-alt-00",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7,
+   "state_id": "dev|long|dev-alt-00|7",
+   "order": [
+    "a0",
+    "a2",
+    "a4",
+    "a1",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 10,
+   "state_call": 11,
+   "state_id": "dev|long|dev-expose-01|11",
+   "order": [
+    "a4",
+    "a0",
+    "a3",
+    "a2",
+    "a1"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-const-07",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 18,
+   "state_call": 19,
+   "state_id": "dev|long|dev-const-07|19",
+   "order": [
+    "a1",
+    "a0",
+    "a4",
+    "a2",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-06",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 13,
+   "state_call": 14,
+   "state_id": "dev|long|dev-expose-06|14",
+   "order": [
+    "a3",
+    "a1",
+    "a2",
+    "a4",
+    "a0"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 16,
+   "state_call": 17,
+   "state_id": "dev|long|dev-rise-07|17",
+   "order": [
+    "a0",
+    "a2",
+    "a1",
+    "a3",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 26,
+   "state_call": 27,
+   "state_id": "dev|long|dev-expose-01|27",
+   "order": [
+    "a0",
+    "a3",
+    "a4",
+    "a2",
+    "a1"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 17,
+   "state_call": 18,
+   "state_id": "dev|long|dev-expose-01|18",
+   "order": [
+    "a2",
+    "a1",
+    "a0",
+    "a4",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4,
+   "state_id": "dev|long|dev-expose-01|4",
+   "order": [
+    "a3",
+    "a2",
+    "a4",
+    "a1",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-alt-00",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 18,
+   "state_call": 19,
+   "state_id": "dev|long|dev-alt-00|19",
+   "order": [
+    "a4",
+    "a3",
+    "a0",
+    "a1",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-chain-08",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 9,
+   "state_call": 10,
+   "state_id": "dev|long|dev-chain-08|10",
+   "order": [
+    "a0",
+    "a3",
+    "a2",
+    "a1",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-06",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 20,
+   "state_call": 21,
+   "state_id": "dev|long|dev-expose-06|21",
+   "order": [
+    "a1",
+    "a4",
+    "a0",
+    "a3",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-const-07",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4,
+   "state_id": "dev|long|dev-const-07|4",
+   "order": [
+    "a0",
+    "a3",
+    "a4",
+    "a1",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-const-07",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 13,
+   "state_call": 14,
+   "state_id": "dev|long|dev-const-07|14",
+   "order": [
+    "a4",
+    "a1",
+    "a3",
+    "a2",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-const-07",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 29,
+   "state_call": 30,
+   "state_id": "dev|long|dev-const-07|30",
+   "order": [
+    "a3",
+    "a4",
+    "a2",
+    "a0",
+    "a1"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-19",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 26,
+   "state_call": 27,
+   "state_id": "train|short|train-const-19|27",
+   "order": [
+    "a4",
+    "a2",
+    "a0",
+    "a1",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-07",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 21,
+   "state_call": 22,
+   "state_id": "train|short|train-const-07|22",
+   "order": [
+    "a2",
+    "a3",
+    "a1",
+    "a0",
+    "a4"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-09",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 15,
+   "state_call": 16,
+   "state_id": "train|short|train-const-09|16",
+   "order": [
+    "a0",
+    "a1",
+    "a3",
+    "a2",
+    "a4"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-12",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13,
+   "state_id": "train|short|train-chain-12|13",
+   "order": [
+    "a0",
+    "a4",
+    "a2",
+    "a3",
+    "a1"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-17",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 21,
+   "state_call": 22,
+   "state_id": "train|short|train-const-17|22",
+   "order": [
+    "a3",
+    "a2",
+    "a1",
+    "a4",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-03",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 13,
+   "state_call": 14,
+   "state_id": "train|short|train-expose-03|14",
+   "order": [
+    "a0",
+    "a1",
+    "a2",
+    "a3",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-00",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8,
+   "state_id": "train|short|train-expose-00|8",
+   "order": [
+    "a2",
+    "a0",
+    "a1",
+    "a4",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-13",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4,
+   "state_id": "train|short|train-alt-13|4",
+   "order": [
+    "a1",
+    "a0",
+    "a2",
+    "a4",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-08",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5,
+   "state_id": "train|short|train-chain-08|5",
+   "order": [
+    "a1",
+    "a4",
+    "a0",
+    "a2",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-05",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 18,
+   "state_call": 19,
+   "state_id": "train|short|train-expose-05|19",
+   "order": [
+    "a1",
+    "a0",
+    "a2",
+    "a4",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-08",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13,
+   "state_id": "train|short|train-rise-08|13",
+   "order": [
+    "a0",
+    "a1",
+    "a4",
+    "a2",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-07",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 16,
+   "state_call": 17,
+   "state_id": "train|short|train-rise-07|17",
+   "order": [
+    "a2",
+    "a3",
+    "a4",
+    "a1",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-07",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5,
+   "state_id": "train|short|train-alt-07|5",
+   "order": [
+    "a2",
+    "a0",
+    "a1",
+    "a3",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-06",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13,
+   "state_id": "train|short|train-rise-06|13",
+   "order": [
+    "a4",
+    "a3",
+    "a2",
+    "a1",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-02",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5,
+   "state_id": "train|short|train-chain-02|5",
+   "order": [
+    "a0",
+    "a3",
+    "a2",
+    "a4",
+    "a1"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-16",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 19,
+   "state_call": 20,
+   "state_id": "train|short|train-rise-16|20",
+   "order": [
+    "a1",
+    "a3",
+    "a0",
+    "a4",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-09",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 19,
+   "state_call": 20,
+   "state_id": "train|short|train-alt-09|20",
+   "order": [
+    "a1",
+    "a4",
+    "a0",
+    "a3",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-03",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8,
+   "state_id": "train|short|train-rise-03|8",
+   "order": [
+    "a4",
+    "a0",
+    "a1",
+    "a3",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-18",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5,
+   "state_id": "train|short|train-chain-18|5",
+   "order": [
+    "a4",
+    "a3",
+    "a0",
+    "a2",
+    "a1"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-12",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7,
+   "state_id": "train|short|train-rise-12|7",
+   "order": [
+    "a3",
+    "a2",
+    "a1",
+    "a0",
+    "a4"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-06",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 16,
+   "state_call": 17,
+   "state_id": "train|long|train-chain-06|17",
+   "order": [
+    "a4",
+    "a2",
+    "a0",
+    "a3",
+    "a1"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-13",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5,
+   "state_id": "train|long|train-alt-13|5",
+   "order": [
+    "a3",
+    "a1",
+    "a2",
+    "a0",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-05",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 18,
+   "state_call": 19,
+   "state_id": "train|long|train-expose-05|19",
+   "order": [
+    "a4",
+    "a2",
+    "a0",
+    "a1",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-07",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5,
+   "state_id": "train|long|train-const-07|5",
+   "order": [
+    "a1",
+    "a3",
+    "a0",
+    "a2",
+    "a4"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-02",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 17,
+   "state_call": 18,
+   "state_id": "train|long|train-rise-02|18",
+   "order": [
+    "a2",
+    "a4",
+    "a1",
+    "a0",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-16",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 21,
+   "state_call": 22,
+   "state_id": "train|long|train-expose-16|22",
+   "order": [
+    "a4",
+    "a3",
+    "a2",
+    "a1",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-19",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 22,
+   "state_call": 23,
+   "state_id": "train|long|train-const-19|23",
+   "order": [
+    "a0",
+    "a1",
+    "a3",
+    "a4",
+    "a2"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-07",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 8,
+   "state_call": 9,
+   "state_id": "train|long|train-rise-07|9",
+   "order": [
+    "a0",
+    "a2",
+    "a4",
+    "a1",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-09",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 23,
+   "state_call": 24,
+   "state_id": "train|long|train-const-09|24",
+   "order": [
+    "a0",
+    "a1",
+    "a3",
+    "a4",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-00",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 16,
+   "state_call": 17,
+   "state_id": "train|long|train-expose-00|17",
+   "order": [
+    "a0",
+    "a2",
+    "a1",
+    "a4",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-17",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 19,
+   "state_call": 20,
+   "state_id": "train|long|train-const-17|20",
+   "order": [
+    "a0",
+    "a1",
+    "a4",
+    "a2",
+    "a3"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-06",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 9,
+   "state_call": 10,
+   "state_id": "train|long|train-rise-06|10",
+   "order": [
+    "a2",
+    "a0",
+    "a1",
+    "a4",
+    "a3"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-08",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 16,
+   "state_call": 17,
+   "state_id": "train|long|train-expose-08|17",
+   "order": [
+    "a3",
+    "a1",
+    "a4",
+    "a0",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-14",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8,
+   "state_id": "train|long|train-alt-14|8",
+   "order": [
+    "a3",
+    "a1",
+    "a2",
+    "a4",
+    "a0"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-13",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 24,
+   "state_call": 25,
+   "state_id": "train|long|train-const-13|25",
+   "order": [
+    "a3",
+    "a0",
+    "a1",
+    "a4",
+    "a2"
+   ],
+   "replicate": true
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-10",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8,
+   "state_id": "train|long|train-alt-10|8",
+   "order": [
+    "a0",
+    "a3",
+    "a1",
+    "a4",
+    "a2"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-15",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 23,
+   "state_call": 24,
+   "state_id": "train|long|train-rise-15|24",
+   "order": [
+    "a3",
+    "a4",
+    "a1",
+    "a2",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-02",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8,
+   "state_id": "train|long|train-expose-02|8",
+   "order": [
+    "a3",
+    "a4",
+    "a0",
+    "a2",
+    "a1"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-18",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 15,
+   "state_call": 16,
+   "state_id": "train|long|train-alt-18|16",
+   "order": [
+    "a4",
+    "a2",
+    "a3",
+    "a1",
+    "a0"
+   ],
+   "replicate": false
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-19",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8,
+   "state_id": "train|long|train-rise-19|8",
+   "order": [
+    "a0",
+    "a3",
+    "a1",
+    "a2",
+    "a4"
+   ],
+   "replicate": false
+  }
+ ]
+}

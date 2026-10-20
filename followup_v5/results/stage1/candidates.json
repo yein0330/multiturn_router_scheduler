@@ -1,0 +1,960 @@
+{
+ "n": 119,
+ "excluded": {
+  "train|short|request ended at the repeat call": 2
+ },
+ "candidates": [
+  {
+   "split": "dev",
+   "session_id": "dev-const-07",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-const-07",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 13,
+   "state_call": 14
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-const-07",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 18,
+   "state_call": 19
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-const-07",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 29,
+   "state_call": 30
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-chain-08",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 5,
+   "state_call": 6
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-chain-08",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-chain-08",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 9,
+   "state_call": 10
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-06",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-06",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 13,
+   "state_call": 14
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-06",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 20,
+   "state_call": 21
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 10,
+   "state_call": 11
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 17,
+   "state_call": 18
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 26,
+   "state_call": 27
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-alt-00",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-alt-00",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 17,
+   "state_call": 18
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 10,
+   "state_call": 11
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 17,
+   "state_call": 18
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-01",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 26,
+   "state_call": 27
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-alt-00",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-alt-00",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 18,
+   "state_call": 19
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 14,
+   "state_call": 15
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-rise-07",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 21,
+   "state_call": 22
+  },
+  {
+   "split": "dev",
+   "session_id": "dev-expose-06",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 15,
+   "state_call": 16
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-14",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-14",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 14,
+   "state_call": 15
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-19",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-19",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-19",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-18",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 8,
+   "state_call": 9
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-18",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 15,
+   "state_call": 16
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-17",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 19,
+   "state_call": 20
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-19",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 22,
+   "state_call": 23
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-09",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-09",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 10,
+   "state_call": 11
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-09",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 19,
+   "state_call": 20
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-07",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-03",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-03",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-05",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-05",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 18,
+   "state_call": 19
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-02",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 17,
+   "state_call": 18
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-12",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-12",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-12",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 21,
+   "state_call": 22
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-03",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-03",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 13,
+   "state_call": 14
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-03",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 20,
+   "state_call": 21
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-05",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 18,
+   "state_call": 19
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-05",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 27,
+   "state_call": 28
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-07",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-07",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 21,
+   "state_call": 22
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-08",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 10,
+   "state_call": 11
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-08",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 14,
+   "state_call": 15
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-13",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 24,
+   "state_call": 25
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-13",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 3,
+   "state_call": 4
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-13",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 10,
+   "state_call": 11
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-13",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 18,
+   "state_call": 19
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-13",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 26,
+   "state_call": 27
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-06",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-06",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 9,
+   "state_call": 10
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-02",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-18",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-18",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 10,
+   "state_call": 11
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-10",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 9,
+   "state_call": 10
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-16",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 9,
+   "state_call": 10
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-16",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 21,
+   "state_call": 22
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-07",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 8,
+   "state_call": 9
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-07",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 15,
+   "state_call": 16
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-07",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 25,
+   "state_call": 26
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-13",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-13",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 14,
+   "state_call": 15
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-09",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 15,
+   "state_call": 16
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-16",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 19,
+   "state_call": 20
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-19",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-19",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-19",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 21,
+   "state_call": 22
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-15",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-15",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 23,
+   "state_call": 24
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-00",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-00",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-01",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-17",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-17",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 11,
+   "state_call": 12
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-17",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 21,
+   "state_call": 22
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-17",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 28,
+   "state_call": 29
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-02",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-08",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-06",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-07",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-07",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 20,
+   "state_call": 21
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-03",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-00",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-00",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-08",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 12,
+   "state_call": 13
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-08",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 17,
+   "state_call": 18
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-07",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-07",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 25,
+   "state_call": 26
+  },
+  {
+   "split": "train",
+   "session_id": "train-rise-12",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 6,
+   "state_call": 7
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-03",
+   "context": "long",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-18",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 9,
+   "state_call": 10
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-08",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 8,
+   "state_call": 9
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-08",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-09",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 23,
+   "state_call": 24
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-10",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 7,
+   "state_call": 8
+  },
+  {
+   "split": "train",
+   "session_id": "train-alt-10",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 20,
+   "state_call": 21
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-06",
+   "context": "long",
+   "request": 1,
+   "repeat_call": 8,
+   "state_call": 9
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-06",
+   "context": "long",
+   "request": 2,
+   "repeat_call": 16,
+   "state_call": 17
+  },
+  {
+   "split": "train",
+   "session_id": "train-chain-06",
+   "context": "long",
+   "request": 3,
+   "repeat_call": 24,
+   "state_call": 25
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-19",
+   "context": "short",
+   "request": 0,
+   "repeat_call": 4,
+   "state_call": 5
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-19",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 12,
+   "state_call": 13
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-19",
+   "context": "short",
+   "request": 2,
+   "repeat_call": 20,
+   "state_call": 21
+  },
+  {
+   "split": "train",
+   "session_id": "train-const-19",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 26,
+   "state_call": 27
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-02",
+   "context": "short",
+   "request": 1,
+   "repeat_call": 8,
+   "state_call": 9
+  },
+  {
+   "split": "train",
+   "session_id": "train-expose-02",
+   "context": "short",
+   "request": 3,
+   "repeat_call": 20,
+   "state_call": 21
+  }
+ ]
+}
