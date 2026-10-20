@@ -1,0 +1,7 @@
+difficulty,model,correct,n,rate
+easy,A,26,28,0.9285714285714286
+easy,B,28,28,1.0
+follow,A,5,16,0.3125
+follow,B,13,16,0.8125
+hard,A,0,36,0.0
+hard,B,18,36,0.5

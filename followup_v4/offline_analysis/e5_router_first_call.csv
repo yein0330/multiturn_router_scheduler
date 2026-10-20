@@ -1,0 +1,7 @@
+context,label,R1_first_choice,n
+long,A_enough,A,14
+long,needB,A,12
+long,needB,B,2
+short,A_enough,A,17
+short,needB,A,11
+short,needB,B,3
