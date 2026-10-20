@@ -1,0 +1,27 @@
+{
+ "branch_runs": 100,
+ "states": 40,
+ "prompt_hash_ok": 100,
+ "first_hit_ok": 100,
+ "restore_rows": 100,
+ "prep_s_median": 1.0167701719910838,
+ "calls": 1037,
+ "cache_mismatch_all_calls": 0,
+ "truncated": 5,
+ "http_errors": 0,
+ "router_fallback": 0,
+ "replicates": {
+  "pairs": 20,
+  "same_text": 20,
+  "J_ratio_range": [
+   0.980853844877476,
+   1.0066183935056512
+  ]
+ },
+ "first_vs_remaining": {
+  "corr_d_first_dJ": 0.09185994976030912,
+  "sign_agree_d_first_dJ": 0.75,
+  "C2_yhat_sign_vs_measured_first": 1.0,
+  "C2_yhat_sign_vs_dJ": 0.75
+ }
+}
