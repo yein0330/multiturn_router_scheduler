@@ -43,3 +43,64 @@ R ready after 27s
 2026-10-16 20:09:19 END rc=0 .venv/bin/python followup_v3/src/stage1_rho.py
 SIGINT R (2753433)
 2026-10-16 20:09:20 servers stopped
+A ready after 24s
+B ready after 3s
+R ready after 0s
+2026-10-19 14:44:44 START [A B R] .venv/bin/python followup_v4/src/stageA.py
+2026-10-19 15:13:34 END rc=0 .venv/bin/python followup_v4/src/stageA.py
+SIGINT A (3833397)
+SIGINT B (3833398)
+SIGINT R (3833399)
+2026-10-19 15:13:34 servers stopped
+A ready after 24s
+B ready after 3s
+R ready after 0s
+2026-10-19 15:15:30 START [A B R] .venv/bin/python followup_v4/src/stageB.py run
+2026-10-19 15:27:25 END rc=0 .venv/bin/python followup_v4/src/stageB.py run
+SIGINT A (3875970)
+SIGINT B (3875971)
+SIGINT R (3875972)
+2026-10-19 15:27:25 servers stopped
+A ready after 27s
+B ready after 0s
+R ready after 3s
+2026-10-20 12:56:21 START [A B R] .venv/bin/python followup_v5/src/stage0.py smoke
+2026-10-20 12:57:04 END rc=0 .venv/bin/python followup_v5/src/stage0.py smoke
+SIGINT A (2140480)
+SIGINT B (2140481)
+SIGINT R (2140482)
+2026-10-20 12:57:04 servers stopped
+A ready after 24s
+B ready after 3s
+R ready after 0s
+2026-10-20 12:57:41 START [A B R] followup_v5/stage0_chain.sh
+2026-10-20 13:33:29 END rc=0 followup_v5/stage0_chain.sh
+SIGINT A (2143803)
+SIGINT B (2143804)
+SIGINT R (2143805)
+2026-10-20 13:33:29 servers stopped
+2026-10-20 17:44:24 ABORT GPU 2 busy
+A ready after 24s
+B ready after 3s
+R ready after 0s
+2026-10-20 18:31:19 START [A B R] .venv/bin/python followup_v5/src/s1.py run --smoke 3
+2026-10-20 18:32:48 END rc=0 .venv/bin/python followup_v5/src/s1.py run --smoke 3
+SIGINT A (2795608)
+SIGINT B (2795609)
+SIGINT R (2795610)
+2026-10-20 18:32:48 servers stopped
+2026-10-20 18:32:48 ABORT GPU 3 busy
+A ready after 24s
+B ready after 3s
+R ready after 0s
+2026-10-20 18:34:46 START [A B R] .venv/bin/python followup_v5/src/s1.py run
+2026-10-20 19:17:50 END rc=0 .venv/bin/python followup_v5/src/s1.py run
+SIGINT A (2803547)
+SIGINT B (2803548)
+SIGINT R (2803549)
+2026-10-20 19:17:50 servers stopped
+R ready after 27s
+2026-10-20 19:24:17 START [R] .venv/bin/python followup_v5/src/s2.py score
+2026-10-20 19:25:43 END rc=0 .venv/bin/python followup_v5/src/s2.py score
+SIGINT R (2901073)
+2026-10-20 19:25:43 servers stopped
